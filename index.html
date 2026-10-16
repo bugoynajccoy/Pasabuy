@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMTR</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="instagram-icons/icons.css">
+
+    
+
+</head>
+<body class="bg-black">
+
+  <nav class="navbar navbar-expand-lg bg-black text-black d-lg-none sticky-top" style="border-bottom: 2px solid rgba(128, 128, 128, 0.13);">
+       <div class="container">
+           <h3 class="fw-bold p-2 navbar-brand text-light">Pasabuy <span class="text-warning">.</span></h3>
+        <ul class="navbar-nav">
+          <div class="d-flex flex-row">
+            <li class="nav-item px-2">
+            <a href="#notification" class="nav-link text-light ">
+              <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-heart"/>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="#message" class="nav-link text-light ">
+              <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-send"/>
+              </svg>
+            </a>
+          </li>
+          </div>
+        </ul>
+  
+        </div>
+  </nav>
+
+
+<div class="container-fluid">
+    <div class="row min-vh-100">
+    <aside class="position-sticky top-0 vh-100 overflow-auto col-lg-2 list-group list-group-flush bg-black text-light p-2 d-none d-lg-block stic" id="sidebar">
+      <h3 class="fw-bold p-2">Pasabuy <span class="text-warning">.</span></h3>
+        <a href="#home" class="list-group-item list-group-item-action rounded-2 mb-2">
+          <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-house-door"/>
+          </svg>
+        Home</a>
+       <a href="#search" class="list-group-item list-group-item-action rounded-2 mb-2">
+        <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-search"/>
+          </svg>
+        Search</a>
+       <a href="#explore" class="list-group-item list-group-item-action rounded-2 mb-2">
+         <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-compass"/>
+          </svg>
+        Explore</a>
+       <a href="#messages" class="list-group-item list-group-item-action rounded-2 mb-2">
+         <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-send"/>
+          </svg>
+        Messages</a>
+       <a href="#notification" class="list-group-item list-group-item-action rounded-2 mb-2">
+          <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-heart"/>
+          </svg>
+        Notifications</a>
+       <a href="#post" class="list-group-item list-group-item-action rounded-2 mb-2">
+          <svg class="bi bi-sm align-middle"><use href="instagram-icons/sprite.svg#bi-plus-square"/>
+          </svg>
+        Post</a>
+       <a href="#profile" class="list-group-item list-group-item-action rounded-2 mb-2">
+         <svg class="bi bi-sm align-middle"><use href="instagram-icons/sprite.svg#bi-person-circle"/>
+          </svg>
+        Profile</a>
+    </aside>
+
+  
+  
+
+    <main class="col-lg-6 p-0 position-sticky vh-100 overflow-auto  mt-3" id="home">
+        <div class="container pb-3" style="border-bottom: 2px solid rgba(128, 128, 128, 0.13);" >
+          <div class="card h-100 border-0" >
+            
+              <div class="card-header bg-black d-flex flex-row gap-3">
+                  <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center"  style="width: 45px; height: 45px;">
+                    <h3 class="text-light fw-light">J</h3>
+                  </div>
+                <div class="name d-flex gap-0 flex-column">
+                    <div class="text-white fw-bold">jake.b</div>
+                    <div class="text-dark-emphasis">Requester.Dimasalang</div>
+                </div>
+              </div>
+
+              <div class="bg-dark p-2 text-light d-flex align-items-start justify-content-center flex-column" style="max-height: 300px; ">
+                <span class="badge rounded-pill bg-success bg-opacity-25 text-success">Budget ₱900</span>
+                <h3 class="mt-2">Birthday cake, 8-inch</h3>
+                <h6><svg class="bi bi-sm"><use href="instagram-icons/sprite.svg#bi-geo-alt-fill"/></svg>Masbate City --------- Dimasalang</h6>
+                <p class="text-dark-emphasis text-opacity-50 mt-5">Needed by Saturday afternoon</p>
+              </div>
+
+            <ul class="list-group list-group-flush bg-black">
+               <div class="d-flex flex-row" id="post-button">
+                  <a href="#heart" class="list-group-item list-group-item-action ">
+                    <svg class="bi bi-md align-middle">
+                      <use href="instagram-icons/sprite.svg#bi-heart"/>
+                    </svg>
+                  </a>
+                     <a href="#comment" class="list-group-item list-group-item-action ">
+                    <svg class="bi bi-md align-middle">
+                      <use href="instagram-icons/sprite.svg#bi-send"/>
+                    </svg>
+                  </a>
+                </div>
+                
+            </ul>
+            <div class="d-flex text-light bg-black">
+              <p><span class="fw-bold">jake.b</span> Looking for a traveler na makadto sa Masbate City
+                this week. Chocolate cake from Goldilocks Masbate City branch.
+              </p>
+            </div>
+            <div class="d-flex flex-column bg-black">
+              <p class="text-dark-emphasis">2 offers so far</p>
+              <button class="btn btn-warning fw-bold">Offer to buy</button>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="container my-4 pb-3" style="border-bottom: 2px solid rgba(128, 128, 128, 0.13);" >
+          <div class="card h-100 border-0">
+            
+              <div class="card-header bg-black d-flex flex-row gap-3" >
+                  <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center"  style="width: 45px; height: 45px;">
+                    <h3 class="text-light fw-light">J</h3>
+                  </div>
+                <div class="name d-flex gap-0 flex-column">
+                    <div class="text-white fw-bold">jerume.a</div>
+                    <div class="text-dark-emphasis">Traveler.Dimasalang</div>
+                </div>
+              </div>
+
+              <div class="bg-dark p-2 text-light d-flex align-items-start justify-content-center flex-column">
+                <span class="badge rounded-pill bg-success bg-opacity-25 text-success">Saturday, Oct 30 - Motorcycle</span>
+                
+                <h4><svg class="bi bi-lg mt-5"><use href="instagram-icons/sprite.svg#bi-geo-alt-fill"/></svg>Dimasalang --------- Masbate City</h4>
+                <p class="text-dark-emphasis text-opacity-50 mt-5">Buying groceries</p>
+              </div>
+
+            <ul class="list-group list-group-flush bg-black">
+               <div class="d-flex flex-row" id="post-button">
+                  <a href="#heart" class="list-group-item list-group-item-action ">
+                    <svg class="bi bi-md align-middle">
+                      <use href="instagram-icons/sprite.svg#bi-heart"/>
+                    </svg>
+                  </a>
+                     <a href="#comment" class="list-group-item list-group-item-action ">
+                    <svg class="bi bi-md align-middle">
+                      <use href="instagram-icons/sprite.svg#bi-send"/>
+                    </svg>
+                  </a>
+                </div>
+                
+            </ul>
+            <div class="d-flex text-light bg-black">
+              <p><span class="fw-bold">jerume.a</span> Going to the city this Saturday.
+                Ma motor, basi my mapa Pasabuy dm lang.
+              </p>
+            </div>
+            <div class="d-flex flex-column bg-black">
+              <button class="btn btn-primary fw-bold">Send a message</button>
+            </div>
+           
+          </div>
+        </div>
+    </main>
+
+  <div class="col-lg-4 position-sticky vh-100 overflow-auto d-none d-lg-block" id="right-panel">
+     <div class="container h-100">
+       <div class="card bg-dark bg-opacity-25 p-2 mt-3" style="border: 2px solid rgba(128, 128, 128, 0.13);">
+        <div class="d-flex justify-content-between rounded-3">
+          <h5 class="text-light">Active transaction</h5>
+          <p class="badge rounded-pill text-warning bg-warning bg-opacity-25 align-middle">Payment held</p>
+        </div>
+        <div class="d-flex flex-column">
+          <h5 class="text-light">Seiko Watch from Mandaon</h5>         
+          <p class="text-dark-emphasis">with Dan A. Mandaon to Dimasalang</p>
+          <div class="row g-1 text-center">
+            <div class="col-3 ">
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-success" style="width: 100%;">
+                </div>
+              </div>
+              <small class="text-dark-emphasis">Approved</small>
+            </div>
+            <div class="col-3 text-center">
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-success" style="width: 100%;">
+                </div>
+              </div>
+              <small class="text-dark-emphasis">Paid</small>
+            </div>
+            <div class="col-3 text-center">
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-warning" style="width: 100%;">
+                </div>
+              </div>
+              <small class="text-warning">Purchased</small>
+            </div>
+             <div class="col-3 text-center">
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-dark" style="width: 100%;">
+                </div>
+              </div>
+              <small class="text-dark-emphasis">Delivered</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="card  bg-dark bg-opacity-25 p-2 mt-3" style="border: 2px solid rgba(128, 128, 128, 0.13);">
+        <h5 class="text-light">Travelers Going today</h5>
+        <div class="d-flex flex-column gap-3">
+           <div class=" d-flex flex-row gap-3" >
+                  <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center"  style="width: 45px; height: 45px;">
+                    <h3 class="text-light fw-light">N</h3>
+                  </div>
+                <div class="name d-flex gap-0 flex-column">
+                    <div class="text-white fw-bold">nathalie.g</div>
+                    <div class="text-dark-emphasis">Dimasalang to Cataingan</div>
+                </div>
+            </div>
+            <div class=" d-flex flex-row gap-3" >
+                  <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center"  style="width: 45px; height: 45px;">
+                    <h3 class="text-light fw-light">N</h3>
+                  </div>
+                <div class="name d-flex gap-0 flex-column">
+                    <div class="text-white fw-bold">nathing.else</div>
+                    <div class="text-dark-emphasis">Dimasalang to Masabate City</div>
+                </div>
+            </div>
+            <div class=" d-flex flex-row gap-3" >
+                  <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center"  style="width: 45px; height: 45px;">
+                    <h3 class="text-light fw-light">P</h3>
+                  </div>
+                <div class="name d-flex gap-0 flex-column">
+                    <div class="text-white fw-bold">prince.c</div>
+                    <div class="text-dark-emphasis">Masbate to Mandaon</div>
+                </div>
+            </div>
+            
+             <div class=" d-flex flex-row gap-3" >
+                  <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center"  style="width: 45px; height: 45px;">
+                    <h3 class="text-light fw-light">G</h3>
+                  </div>
+                <div class="name d-flex gap-0 flex-column">
+                    <div class="text-white fw-bold">gerald.d</div>
+                    <div class="text-dark-emphasis">Dimasalang to Mobo</div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div  class="card  bg-dark bg-opacity-25 p-2 mt-3" style="border: 2px solid rgba(128, 128, 128, 0.13);">
+        <h5 class="text-light">Offers to buy</h5>
+        <div class="d-flex flex-column gap-3">
+            <div class=" d-flex flex-row gap-3" >
+                  <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center"  style="width: 45px; height: 45px;">
+                    <h3 class="text-light fw-light">L</h3>
+                  </div>
+                <div class="name d-flex gap-0 flex-column">
+                    <div class="text-white fw-bold">lorenz.d</div>
+                    <div class="text-dark-emphasis">300x17 Leo Tire in Masbate City</div>
+                </div>
+            </div>
+             <div class=" d-flex flex-row gap-3" >
+                  <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center"  style="width: 45px; height: 45px;">
+                    <h3 class="text-light fw-light">B</h3>
+                  </div>
+                <div class="name d-flex gap-0 flex-column">
+                    <div class="text-white fw-bold">bryan.m</div>
+                    <div class="text-dark-emphasis">Burger&Fries in Jolibee</div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <input id="search" type="search" placeholder="Search" class="form-control bg-dark bg-opacity-25 rounded-5 my-4"  style="border: 2px solid rgba(128, 128, 128, 0.13);">
+          
+      </div>
+     </div>
+    </div>
+
+
+    <div class="offcanvas offcanvas-bottom d-lg-none h-25 p-1 bg-dark bg-opacity-25 d-flex justify-content-end align-items-end " tabindex="-1" id="SearchCanvas" style="backdrop-filter: blur(3px);">
+      <div class="offcanvas-header">
+         <button class="btn btn-close btn-close-white " type="button" data-bs-dismiss="offcanvas"></button>
+       </div>
+      <div class="offcanvas-body d-flex align-items-center justify-content-center w-100">
+         <input id="search" type="search" placeholder="Search" class="form-control bg-dark-subtle bg-opacity-25 rounded-5"  style="border: 2px solid rgba(128, 128, 128, 0.13); width: 100%;">
+     </div>
+
+    </div>
+    <div class=" p-3 offcanvas offcanvas-bottom d-lg-none bg-dark bg-opacity-75" id="CartCanvas" style="backdrop-filter: blur(6px);">
+      <div class=" d-flex flex-column j">
+        <div class="d-flex justify-content-between">
+          <h5 class="text-light">Active transaction</h5>
+           <button class="btn btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <h5 class="text-light">Seiko Watch from Mandaon</h5>         
+          <p class="text-dark-emphasis">with Dan A. Mandaon to Dimasalang</p>
+         
+      </div>
+      <div class="offcanvas-body "  tabindex="-1" id="CartCanvas">
+        <div class="row g-1 text-center">
+            <div class="col-3">
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-success" style="width: 100%;">
+                </div>
+              </div>
+              <small class="text-dark-emphasis">Approved</small>
+            </div>
+            <div class="col-3 text-center">
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-success" style="width: 100%;">
+                </div>
+              </div>
+              <small class="text-dark-emphasis">Paid</small>
+            </div>
+            <div class="col-3 text-center">
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-warning" style="width: 100%;">
+                </div>
+              </div>
+              <small class="text-warning">Purchased</small>
+            </div>
+             <div class="col-3 text-center">
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-dark" style="width: 100%;">
+                </div>
+              </div>
+              <small class="text-dark-emphasis">Delivered</small>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+<nav class="navbar navbar-expand-lg bg-black sticky-bottom d-lg-none" style="border-top: 2px solid rgba(128, 128, 128, 0.13);">  
+  <div class="container">
+      
+    <ul class="navbar-nav w-100">         
+      
+    <div class="d-flex flex-row justify-content-center gap-5" >
+        <li class="nav-item" style="margin-right: 10px;" >
+          <a href="#home" class="nav-link active" id="bottom-nav" >
+            <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-house-door"/>
+          </svg>
+          </a>
+        </li>
+        <li class="nav-item"  style="margin-right: 10px;">
+          <a href="#search" class="nav-link text-dark-emphasis" data-bs-target="#SearchCanvas" data-bs-toggle="offcanvas">
+            <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-search"/>
+          </svg>
+          </a>
+        </li>
+       <li class="nav-item px-3 rounded-3"  style="margin-right: 15px; background-color: orange;">
+          <a href="#post" class="nav-link text-black">
+            <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-plus-square"/>
+          </svg>
+          </a>
+        </li>
+        <li class="nav-item"  style="margin-right: 10px;">
+          <a href="#cart" class="nav-link text-dark-emphasis" type="button" data-bs-toggle="offcanvas" data-bs-target="#CartCanvas">
+            <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-bag"/>
+          </svg>
+          </a>
+        </li>
+        <li class="nav-item"  style="margin-right: 10px;">
+          <a href="#profile" class="nav-link text-dark-emphasis">
+            <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-person-circle"/>
+          </svg>
+          </a>
+        </li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+    
+  
+    
+</body>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js">
+
+</script>
+</html>

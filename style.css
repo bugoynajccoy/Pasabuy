@@ -1,0 +1,69 @@
+#sidebar a{
+    background-color:transparent;
+    border-bottom: none;
+    color:white;
+}
+
+#sidebar{
+    
+    border-right: 2px solid rgba(128, 128, 128, 0.13);
+   
+}
+
+.form-control:focus{
+    border-color: red;
+}
+
+#home{ 
+    
+    border-right: 2px solid rgba(128, 128, 128, 0.13);
+}
+
+#sidebar a:hover{
+    background-color: rgba(53, 52, 52, 0.267);
+}
+
+#sidebar a svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+#post-button a{
+    background-color:transparent;
+    border: none;
+    color:white;
+    width: 40px;
+}
+
+#post-button a:hover{ 
+    color:orange;
+}
+
+
+#bottom-nav.active svg{
+    color: white;
+}
+
+#bottom-nav svg{
+    color: rgba(255, 255, 255, 0.24);
+}
+
+.stories{
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+#home::-webkit-scrollbar{
+    display: none;
+}
+
+#right-panel::-webkit-scrollbar{
+    display: none;
+}
+
+#CartCanvas::-webkit-scrollbar{
+    display: none;
+}

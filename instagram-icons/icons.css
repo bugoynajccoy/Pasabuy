@@ -1,0 +1,6 @@
+/* Usage: <svg class="bi bi-lg"><use href="sprite.svg#bi-heart"/></svg> */
+.bi{width:1em;height:1em;fill:currentColor;vertical-align:-.125em;display:inline-block}
+.bi-sm{width:16px;height:16px}.bi-md{width:24px;height:24px}
+.bi-lg{width:32px;height:32px}.bi-xl{width:48px;height:48px}
+.bi-like{color:#ff3040}
+.bi-gradient{fill:url(#ig-grad)}
