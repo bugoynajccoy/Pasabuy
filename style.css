@@ -40,6 +40,22 @@
     color:orange;
 }
 
+#top-button{
+    background-color:transparent;
+    border: none;
+    color:white;
+    width: 40px;
+}
+
+.navbar-nav a:hover{ 
+    color:orange !important;
+}
+
+.nav-item a:hover{ 
+    color:orange !important;
+}
+
+
 
 #bottom-nav.active svg{
     color: white;

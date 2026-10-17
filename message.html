@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="instagram-icons/icons.css">
+</head>
+<body class="bg-black">
+    <nav class="navbar navbar-expand-lg bg-black sticky-top" style="border-bottom: 2px solid rgba(128, 128, 128, 0.13);">
+    <div>
+        <h3 class="fw-bold p-2 navbar-brand text-light">Message <span class="text-warning">.</span></h3>
+    </div>
+</nav>
+
+<div class="container-fluid p-0">
+    <div class="container p-0 min-vh-100">
+         <div class="p-4">
+         <input  id="search" type="search" placeholder="Search" class="form-control bg-dark bg-opacity-25 rounded-5"  style="border: 2px solid rgba(128, 128, 128, 0.13);">
+     </div>
+
+      <div class="row gap-2 w-100 px-4">
+        <button class=" btn btn-dark btn-sm col-1 rounded-4" >
+            All
+        </button>
+        <button class="col-2 btn btn-outline-dark btn-sm rounded-4" >
+            Unread
+        </button>
+        <button class="col-2 btn btn-outline-dark btn-sm rounded-4">
+            Buying
+        </button>
+        <button class="col-3 btn btn-outline-dark btn-sm rounded-4">
+            Delivering
+        </button>
+      </div>
+       <div class=" d-flex flex-column gap-3 mt-3 bg-dark bg-opacity-25 p-2 w-100"  style="border-bottom: 2px solid rgba(128, 128, 128, 0.13);">
+        <div class="d-flex flex-row gap-2">
+                     <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"  style="width: 45px; height: 45px; object-fit: cover;">
+                    <h3 class="text-light fw-bold m-0">B</h3>
+                  </div>
+                 
+            <div class="d-flex justify-content-between align-items-center w-100">
+                 <div class="d-flex flex-column">
+                    <p class="text-light fw-bold m-0">bryan.m <span class="badge rounded-pill bg-warning bg-opacity-25 text-warning">Trip: Milagros to Mandaon</span></p> 
+                    <p class="m-0 text-secondary">Sent a message.</p>
+                </div> 
+                 <p class="text-secondary">9:21 AM</p>
+                
+            </div>
+        </div>
+        <div>
+           
+        </div>
+    </div>
+     <div class=" d-flex flex-column gap-3 bg-dark bg-opacity-25 p-2 w-100"  style="border-bottom: 2px solid rgba(128, 128, 128, 0.13);">
+        <div class="d-flex flex-row gap-2">
+                     <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"  style="width: 45px; height: 45px; object-fit: cover;">
+                    <h3 class="text-light fw-bold m-0">N</h3>
+                  </div>
+                 
+            <div class="d-flex justify-content-between align-items-center w-100">
+                 <div class="d-flex flex-column">
+                    <p class="text-light fw-bold m-0">nathin.else <span class="badge rounded-pill bg-success bg-opacity-25 text-success">Offer to buy</span></p> 
+                    <p class="m-0 text-secondary">Budget ₱1,250</p>
+                </div> 
+                 <p class="text-secondary">12:51 AM</p>
+                
+            </div>
+        </div>
+        <div>
+           
+        </div>
+    </div>
+    <div class=" d-flex flex-column gap-3 bg-dark bg-opacity-25 p-2 w-100"  style="border-bottom: 2px solid rgba(128, 128, 128, 0.13);">
+        <div class="d-flex flex-row gap-2">
+                     <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"  style="width: 45px; height: 45px; object-fit: cover;">
+                    <h3 class="text-light fw-bold m-0">J</h3>
+                  </div>
+                 
+            <div class="d-flex justify-content-between align-items-center w-100">
+                 <div class="d-flex flex-column">
+                    <p class="text-light fw-bold m-0">munoy.p <span class="badge rounded-pill bg-secondary bg-opacity-25 text-secondary">Purchased</span></p> 
+                    <p class="m-0 text-secondary">Shared a meet-up point.</p>
+                </div> 
+                 <p class="text-secondary">10:18 AM</p>
+                
+            </div>
+        </div>
+        <div>
+           
+        </div>
+    </div>
+
+
+</div>
+
+ <nav class="navbar navbar-expand-lg bg-black sticky-bottom d-lg-none" style="border-top: 2px solid rgba(128, 128, 128, 0.13);">
+        <div class="container">
+            <ul class="navbar-nav w-100">  
+                <div class="row d-flex align-items-center justify-content-center">
+                   <div class="col-2">
+                     <li class="nav-item " >
+                            <a href="index.html" class="nav-link text-light">
+                                <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-house-door"/>
+                                </svg>
+                             </a>
+                    </li>
+                   </div>
+                    <div class="col-2">
+                        <li class="nav-item">
+                            <a href="#search" class="nav-link text-light" data-bs-target="#SearchCanvas" data-bs-toggle="offcanvas">
+                                <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-search"/>
+                            </svg>
+                            </a>
+                    </li>
+                    </div>
+                    <div class="col-2">
+                        <li class="nav-item px-2 rounded-3 w-50 d-flex align-items-center justify-content-center"  >
+                            <a href="#post" class="nav-link text-warning fw-bolder">
+                                <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-plus-square"/>
+                            </svg>
+                            </a>
+                    </li>
+                    </div>
+                    <div class="col-2">
+                        <li class="nav-item col-2"  >
+                            <a href="#cart" class="nav-link text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#CartCanvas">
+                                <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-bag"/>
+                            </svg>
+                            </a>
+                    </li>
+                    </div>
+                    <div class="col-2">
+                        <li class="nav-item col-2" >
+                            <a href="profile.html" class="nav-link text-light">
+                                <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-person-circle"/>
+                            </svg>
+                            </a>
+                    </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js">
+
+</script>
+</html>
