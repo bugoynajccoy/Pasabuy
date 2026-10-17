@@ -1,7 +1,7 @@
 #sidebar a{
     background-color:transparent;
     border-bottom: none;
-    color:white;
+    color:black;
 }
 
 #sidebar{
@@ -32,7 +32,7 @@
 #post-button a{
     background-color:transparent;
     border: none;
-    color:white;
+    color:black;
     width: 40px;
 }
 
@@ -91,7 +91,7 @@
 
 .nav-tabs .nav-link {
     border: none !important;
-    color: white;
+    color: black;
 }
 
 .nav-tabs .nav-link:hover{
