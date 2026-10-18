@@ -45,6 +45,10 @@ svg{
     color:orange;
 }
 
+#post-button a small:hover{ 
+    color:orange;
+}
+
 #top-button{
     background-color:transparent;
     border: none;
@@ -56,7 +60,7 @@ svg{
     color:orange !important;
 }
 
-.nav-item a:hover{ 
+.nav-item:hover{ 
     color:orange !important;
 }
 
@@ -100,5 +104,7 @@ svg{
 }
 
 .nav-tabs .nav-link:hover{
-    color: orange;
+    color: orange !important;
 }
+
+
