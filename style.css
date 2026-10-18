@@ -34,6 +34,11 @@
     border: none;
     color:black;
     width: 40px;
+   
+}
+
+svg{
+    overflow: visible;
 }
 
 #post-button a:hover{ 

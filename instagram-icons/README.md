@@ -1,6 +1,6 @@
 # Instagram UI Icons (Bootstrap Icons 1.13.2, offline)
 
-174 curated icons from Bootstrap Icons for building Instagram-style interfaces.
+198 curated icons from Bootstrap Icons for building Instagram-style interfaces.
 No CDN or internet needed.
 
 ## Contents
