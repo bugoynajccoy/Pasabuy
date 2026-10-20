@@ -133,7 +133,7 @@
            </div>
             <div class="d-flex flex-column bg-white">
               <p class="text-secondary">2 offers so far</p>
-              <button class="btn btn-warning fw-bold"><a href="message.html" class="nav-link">Offer to buy</a></button>
+              <button class="btn btn-warning fw-bold"><a href="message.html" class="nav-link">Offer to deliver</a></button>
             </div>
            
           </div>
@@ -343,17 +343,112 @@
     </div>
 
 
-   <div class="offcanvas offcanvas-bottom d-lg-none h-25 p-1 bg-white d-flex justify-content-end align-items-end " tabindex="-1" id="SearchCanvas" style="backdrop-filter: blur(3px);">
+   <div class="offcanvas offcanvas-bottom d-lg-none h-50 p-1 bg-white d-flex flex-column rounded-top-5" tabindex="-1" id="SearchCanvas" style="backdrop-filter: blur(3px);">
       
-      <div class="offcanvas-header">
+      <div class="offcanvas-header d-flex justify-content-between">
+          <h1 class="fw-bold navbar-brand text-black">Search <span class="text-warning">.</span></h1>
          <button class="btn btn-close" type="button" data-bs-dismiss="offcanvas"></button>
        </div>
-      <div class="offcanvas-body d-flex align-items-center justify-content-center w-100">
-         <input id="search" type="search" placeholder="Search" class="form-control rounded-5"  style="border: 2px solid rgba(128, 128, 128, 0.13); width: 100%;">
+      <div class="offcanvas-body">
+          <input id="search" type="search" placeholder="Search" class="form-control rounded-5 mb-3"  style="border: 2px solid rgba(128, 128, 128, 0.13);">
+       <div class="row mb-3 gap-2">
+         <a class=" btn btn-dark btn-sm col-2 rounded-4">
+            All
+        </a>
+        <a class="col-3 btn btn-outline-dark btn-sm rounded-4" >
+            Items requests
+        </a>
+        <a class="col-3 btn btn-outline-dark btn-sm rounded-4">
+            Travel posts
+        </a>
+        <a class="col-3 btn btn-outline-dark btn-sm rounded-4">
+           User
+        </a>
+       </div>
+        <div class="d-flex justify-content-between mb-2 align-items-center">
+          <h6>Recent searches</h6>
+          <button class=" btn btn-outline-warning btn-sm rounded-4">Clear all</button>
+        </div>
+        <div class="row g-2 mb-3">
+          <div class="col-12 d-flex justify-content-between">
+            <div class="d-flex gap-2">
+              <svg class="bi bi-md align-middle text-secondary">
+                      <use href="instagram-icons/sprite.svg#bi-clock"/>
+                    </svg>
+              Goldilocks cake Masbate City
 
+            </div>
+            <button class="btn btn-close"></button>
+          </div>
+          <div class="col-12 d-flex justify-content-between">
+            <div class="d-flex gap-2">
+              <svg class="bi bi-md align-middle text-secondary">
+                      <use href="instagram-icons/sprite.svg#bi-clock"/>
+                    </svg>
+                    Traveler to Cataingan
+
+            </div>
+            <button class="btn btn-close"></button>
+          </div>
+          <div class="col-12 d-flex justify-content-between">
+            <div class="d-flex gap-2">
+              <svg class="bi bi-md align-middle text-secondary">
+                      <use href="instagram-icons/sprite.svg#bi-clock"/>
+                    </svg>
+              Pandesal Dimasalang
+
+            </div>
+            <button class="btn btn-close"></button>
+          </div>
+        </div>
+        <h6>Popular destinatinons</h6>
+        <div class="row g-1">
+          <div class="col-auto">
+            <a href="" class="btn btn-outline-warning btn-sm rounded-5">
+               <svg class="bi bi-md align-middle ">
+                      <use href="instagram-icons/sprite.svg#bi-geo-alt"/>
+                    </svg>
+                    Masbate City
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="" class="btn btn-outline-warning btn-sm rounded-5">
+               <svg class="bi bi-md align-middle ">
+                      <use href="instagram-icons/sprite.svg#bi-geo-alt"/>
+                    </svg>
+                    Dimasalang
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="" class="btn btn-outline-warning btn-sm rounded-5">
+               <svg class="bi bi-md align-middle ">
+                      <use href="instagram-icons/sprite.svg#bi-geo-alt"/>
+                    </svg>
+                    Mandaon
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="" class="btn btn-outline-warning btn-sm rounded-5">
+               <svg class="bi bi-md align-middle ">
+                      <use href="instagram-icons/sprite.svg#bi-geo-alt"/>
+                    </svg>
+                    Cataingan
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="" class="btn btn-outline-warning btn-sm rounded-5">
+               <svg class="bi bi-md align-middle ">
+                      <use href="instagram-icons/sprite.svg#bi-geo-alt"/>
+                    </svg>
+                    Balud
+            </a>
+          </div>
+        </div>
       </div>
-
     </div>
+
+
+
     <div class=" p-3 offcanvas offcanvas-bottom d-lg-none bg-white" id="CartCanvas" style="backdrop-filter: blur(6px);">
       <div class=" d-flex flex-column j">
         <div class="d-flex justify-content-between">
