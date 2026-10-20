@@ -33,51 +33,70 @@
         </div>
   </nav>
 <body class="bg-white">
-    <div class="cotainer-fluid p-2">
-        <div class="card bg-white p-3 my-2 rounded-4 w-100"  >
-            <div class=" d-flex flex-column gap-3">
-                 <div class="d-flex flex-row gap-3">
-                     <div class="bg-primary rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center"  style="width: 50px; height: 50px; object-fit: cover;">
-                    <h3 class="text-light m-0">B</h3>
-                  </div>
-                <div class="name d-flex gap-0 flex-column">
-                    <div class="text-black fw-bold">bugoyna.jccoy <span class="badge rounded-pill bg-success text-success bg-opacity-25">Verified</span></div>
-                    <div class="text-dark-emphasis">Dimasalang. Member since Oct 2026</div>
-                </div>
-                 </div>
-            </div>
-            <div class="text-dark-emphasis my-2"><p class="text-black">Weeky sa city every Saturday. Gcash or Cash</p></div>
-            <button class="btn btn-primary">Edit profile</button>
+    <div class="cotainer-fluid p-2 min-vh-100">
+       <div class="d-flex flex-row justify-content-between px-3">
+        <div class=" d-flex rounded-circle bg-primary align-items-center justify-content-center" style="width: 80px; height: 80px;">
+          <p class="fs-1 text-white fw-bold text-center m-0">B</p>
         </div>
-        <div class="card bg-white p-2 rounded-4 my-2"  style="border: 2px solid rgba(128, 128, 128, 0.13);">
-           <div class="row">
+        <div class="row g-5 d-flex align-items-center justify-content-center">
+           <div class="col-4">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <h5 class="m-0 fw-bold">12</h5>
+                                <p class="m-0 text-secondary">Deliveries</p>
+                                </div>
+                </div>
                  <div class="col-4">
-                <div class="d-flex flex-column align-items-center justify-content-center">
-                    <p class="m-0 fw-bold text-warning">4.8</p>
-                <p class="m-0 text-black">Ratings</p>
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <h5 class="m-0 fw-bold">10</h5>
+                                <p class="m-0 text-secondary">Requests</p>
+                                </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="d-flex flex-column align-items-center justify-content-center">
-                    <p class="m-0 fw-bold text-warning">12</p>
-                <p class="m-0 text-black">Deliveries</p>
+                 <div class="col-4">
+                                <div class="d-flex flex-column align-items-center justify-content-center">
+                                    <h5 class="m-0 fw-bold">4.8</h5>
+                                <p class="m-0 text-secondary">Ratings</p>
+                                </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="d-flex flex-column align-items-center justify-content-center">
-                    <p class="m-0 fw-bold text-warning">10</p>
-                <p class="m-0 text-black">Requests</p>
-                </div>
-            </div>
-           </div>
         </div>
-    <div class="card bg-white p-2 mb-2 rounded-4" style="border: 2px solid rgba(128, 128, 128, 0.13);">
+       </div>
+       <h5 class="fw-bold m-0 mt-2">Bugoyna.Jccoy</h5>
+       <div class="row text-primary fw-semibold ">
+        <div class="col-auto">
+          <div>
+            <svg class="bi bi-sm align-middle"
+                                ><use href="instagram-icons/sprite.svg#bi-patch-check"/>
+                                </svg>
+                                <small>Verified Traveler & Requester</small>
+          </div>
+        </div>
+       </div>
+       <p class="m-0">Weekly sa City every Saturday</p>
+      <div class="row text-secondary ">
+        <div class="col-auto">
+          <div>
+            <svg class="bi bi-sm align-middle"
+                                ><use href="instagram-icons/sprite.svg#bi-geo-alt"/>
+                                </svg>
+                                <small>Dimasalang.Member since Oct 2026</small>
+          </div>
+        </div>
+       </div>
+       <div class="row mt-3 g-2 ">
+        <div class="col-6">
+          <button class="btn btn-warning fw-bold w-100">Edit profile</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-warning fw-bold w-100">Share profile</button>
+        </div>
+       </div>
+
+       <div class="card bg-white p-2 mt-3" style="border: 2px solid rgba(128, 128, 128, 0.13);">
         <div class="d-flex justify-content-between rounded-3">
-          <h5 class="text-black">Active transaction</h5>
+          <small class="text-secondary m-0 fw-bold">Active transaction</small>
           <p class="badge rounded-pill text-warning bg-warning bg-opacity-25 align-middle">Payment held</p>
         </div>
         <div class="d-flex flex-column">
-          <h5 class="text-black">Seiko Watch from Mandaon</h5>         
+          <h5 class="text-black m-0">Seiko Watch from Mandaon</h5>         
           <p class="text-dark-emphasis">with Dan A. Mandaon to Dimasalang</p>
           <div class="row g-1 text-center">
             <div class="col-3 ">
@@ -112,14 +131,13 @@
         </div>
       </div>
 
-    <div class="col-12 d-flex justify-content-center align-items-center">
         <ul class="nav nav-tabs w-100" 
         style=
         "--bs-nav-tabs-link-active-bg:none;
         --bs-nav-tabs-link-active-color: orange;
         --bs-nav-tabs-link-color:black;"
         >
-            <div class="d-flex justify-content-around align-items-center w-100">
+        <div class="d-flex justify-content-around align-items-center w-100">
         <li class="nav-item fw-bold">
             <button class="nav-link active" type="button" data-bs-toggle="tab" data-bs-target="#requests">
                 Requests
@@ -135,20 +153,22 @@
                 Reviews
             </button>
         </li>
-            </div>
+        </div>
       </ul>
-      </div>
+ 
+    
+    </div>
 
-      <div class="tab-content">
-        <div class="tab-pane show fade active card  bg-white p-3 m-3 rounded-4 " id="requests" style="border: 2px solid rgba(128, 128, 128, 0.13);">
+       <div class="tab-content">
+        <div class="tab-pane show fade active card  bg-white bg-opacity-25 p-3 m-3 rounded-4 d-flex align-content-center justify-content-center" id="requests" style="border: 2px solid rgba(128, 128, 128, 0.13);">
             <div class="d-flex justify-content-between align-items-center">
                 <h5 class="fw-bold text-black">Birthday cake,8-inch </h5>
-                <span class="badge rounded-pill bg-warning bg-opacity-25 text-warning">Open</span>
+                <span class="badge rounded-pill bg-success bg-opacity-25 text-success">Open</span>
             </div>
             <div class="text-dark-emphasis ">Masbate City to Dimasalang. Budget ₱900</div>
             <div class="text-dark-emphasis ">2 offers so far</div>
         </div>
-         <div class="tab-pane card fade bg-white p-3 m-3 rounded-4 " id="trips" style="border: 2px solid rgba(128, 128, 128, 0.13);">
+         <div class="tab-pane card fade bg-white bg-opacity-25 p-3 m-3 rounded-4 " id="trips" style="border: 2px solid rgba(128, 128, 128, 0.13);">
             <div class="d-flex justify-content-between align-items-center">
                 <h5 class="fw-bold text-black">Dimasalang to Mandaon</h5>
                 <span class="badge rounded-pill bg-success bg-opacity-25 text-success">Open</span>
@@ -156,29 +176,25 @@
             <div class="text-dark-emphasis ">Monday, Oct 19.Motorcycle</div>
             <div class="text-dark-emphasis ">8AM-10AM</div>
         </div>
-         <div class="tab-pane card fade  bg-white p-3 m-3 rounded-4 " id="reviews" style="border: 2px solid rgba(128, 128, 128, 0.13);">
+         <div class="tab-pane card fade  bg-white bg-opacity-25 p-3 m-3 rounded-4 " id="reviews" style="border: 2px solid rgba(128, 128, 128, 0.13);">
             <div class=" d-flex flex-column gap-3">
                  <div class="d-flex flex-row gap-3">
                      <div class="bg-primary rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center"  style="width: 45px; height: 45px; object-fit: cover;">
-                    <h3 class="text-light m-0">J</h3>
+                    <h3 class="text-light m-0">P</h3>
                   </div>
-                <div class="name d-flex gap-0 flex-column">
-                    <div class="text-black fw-bold">jake.b   <div class="badge rounded-pill bg-warning bg-opacity-25 text-warning"> 5.0 Ratings</div></div>
-                    <div class="text-dark-emphasis">Dimasalang. Member since Oct 2026</div>
+               <div class="name d-flex gap-0 flex-column">
+                    <div class="text-black fw-bold">pochulo.m   <div class="badge rounded-pill bg-warning bg-opacity-25 text-warning"> 5.0 Ratings</div></div>
+                    <div class="text-dark-emphasis">Palanas. Member since Oct 2026</div>
                 </div>
                  </div>
             </div>
 
-            <div class="text-black mt-2 "><span class="text-success">Feedback:</span> Madali ka transaction tapos dle barat.</div>
+            <div class="text-black mt-2 "><span class="text-success">Feedback:</span> Madali ka istoryahan.</div>
           
         </div>
       </div>
 
-
-    </div>
-
-    
-   <div class="offcanvas offcanvas-bottom d-lg-none h-50 p-1 bg-white d-flex flex-column rounded-top-4" tabindex="-1" id="SearchCanvas" style="backdrop-filter: blur(3px);">
+    <div class="offcanvas offcanvas-bottom d-lg-none h-50 p-1 bg-white d-flex flex-column rounded-top-4" tabindex="-1" id="SearchCanvas" style="backdrop-filter: blur(3px);">
       
       <div class="offcanvas-header d-flex justify-content-between">
           <h1 class="fw-bold navbar-brand text-black">Search <span class="text-warning">.</span></h1>
@@ -186,7 +202,7 @@
        </div>
       <div class="offcanvas-body">
           <input id="search" type="search" placeholder="Search" class="form-control rounded-5 mb-3"  style="border: 2px solid rgba(128, 128, 128, 0.13);">
-       
+      
         <div class="d-flex justify-content-between mb-2 align-items-center">
           <h6>Recent searches</h6>
           <button class=" btn text-warning btn-sm rounded-4">Clear all</button>
@@ -226,7 +242,7 @@
         <h6>Popular destinatinons</h6>
         <div class="row g-1">
           <div class="col-auto">
-            <a href="" class="btn btn-dark btn-sm rounded-5">
+            <a href="" class="btn btn-dark btn-sm rounded-5 ">
                <svg class="bi bi-md align-middle ">
                       <use href="instagram-icons/sprite.svg#bi-geo-alt"/>
                     </svg>
@@ -268,7 +284,7 @@
         </div>
       </div>
     </div>
-  <div class=" p-3 offcanvas offcanvas-bottom d-lg-none bg-white rounded-top-4"  id="CartCanvas" style="backdrop-filter: blur(6px);">
+    <div class=" p-3 offcanvas offcanvas-bottom d-lg-none bg-white rounded-top-4" id="CartCanvas" style="backdrop-filter: blur(6px);">
       <div class=" d-flex flex-column j">
         <div class="d-flex justify-content-between">
           <h5 class="text-black">Active transaction  <span class="badge rounded-pill text-warning bg-warning bg-opacity-25 align-middle">Payment held</span></h5>
