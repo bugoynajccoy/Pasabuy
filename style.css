@@ -1,111 +1,100 @@
-#sidebar a{
-    background-color:transparent;
-    border-bottom: none;
-    color:black;
+#sidebar a {
+  background-color: transparent;
+  border-bottom: none;
+  color: black;
 }
 
-#sidebar{
-    
-    border-right: 2px solid rgba(128, 128, 128, 0.13);
-   
+#sidebar {
+  border-right: 2px solid rgba(128, 128, 128, 0.13);
 }
 
-.form-control:focus{
-    border-color: red;
+.form-control:focus {
+  border-color: red;
 }
 
-#home{ 
-    
-    border-right: 2px solid rgba(128, 128, 128, 0.13);
+#home {
+  border-right: 2px solid rgba(128, 128, 128, 0.13);
 }
 
-#sidebar a:hover{
-    background-color: rgba(53, 52, 52, 0.267);
+#sidebar a:hover {
+  background-color: rgba(53, 52, 52, 0.267);
 }
 
-#sidebar a svg{
-    width: 20px;
-    height: 20px;
-    margin-right: 7px;
+#sidebar a svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
 }
 
-#post-button a{
-    background-color:transparent;
-    border: none;
-    color:black;
-    
-   
+#post-button a {
+  background-color: transparent;
+  border: none;
+  color: black;
 }
 
-svg{
-    overflow: visible;
+svg {
+  overflow: visible;
 }
 
-#post-button a:hover{ 
-    color:orange;
+#post-button a:hover {
+  color: orange;
 }
 
-#post-button a small:hover{ 
-    color:orange;
+#post-button a small:hover {
+  color: orange;
 }
 
-#top-button{
-    background-color:transparent;
-    border: none;
-    color:white;
-    width: 40px;
+#top-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: 40px;
 }
 
-.navbar-nav a:hover{ 
-    color:orange !important;
+.navbar-nav a:hover {
+  color: orange !important;
 }
 
-.nav-item:hover{ 
-    color:orange !important;
+.nav-item:hover {
+  color: orange !important;
 }
 
-
-
-
-#bottom-nav.active svg{
-    color: white;
+#bottom-nav.active svg {
+  color: white;
 }
 
-#bottom-nav svg{
-    color: rgba(255, 255, 255, 0.24);
+#bottom-nav svg {
+  color: rgba(255, 255, 255, 0.24);
 }
 
-.stories{
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+.stories {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 
-#home::-webkit-scrollbar{
-    display: none;
+#home::-webkit-scrollbar {
+  display: none;
 }
 
-#right-panel::-webkit-scrollbar{
-    display: none;
+#right-panel::-webkit-scrollbar {
+  display: none;
 }
 
-#CartCanvas::-webkit-scrollbar{
-    display: none;
+#CartCanvas::-webkit-scrollbar {
+  display: none;
 }
 
-.nav-tabs .nav-link.active{
-    border:none;
-
+.nav-tabs .nav-link.active {
+  border: none;
 }
 
 .nav-tabs .nav-link {
-    border: none !important;
-    color: black ;
+  border: none !important;
+  color: black;
 }
 
-.nav-tabs .nav-link:hover{
-    color: orange !important;
+.nav-tabs .nav-link:hover {
+  color: orange !important;
 }
-
-
