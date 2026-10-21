@@ -1,393 +1,489 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Message</title>
 
-     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="instagram-icons/icons.css">
-</head>
-<body class="bg-white">
- <nav class="navbar navbar-expand-lg bg-white text-black d-lg-none sticky-top" style="border-bottom: 2px solid rgba(128, 128, 128, 0.13);">
-       <div class="container">
-           <h3 class="fw-bold p-2 navbar-brand text-black">Notifications <span class="text-warning">.</span></h3>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="instagram-icons/icons.css" />
+  </head>
+  <body class="bg-white">
+    <nav
+      class="navbar navbar-expand-lg bg-white text-black d-lg-none sticky-top"
+      style="border-bottom: 2px solid rgba(128, 128, 128, 0.13)"
+    >
+      <div class="container">
+        <h3 class="fw-bold p-2 navbar-brand text-black">
+          Notifications <span class="text-warning">.</span>
+        </h3>
         <ul class="navbar-nav">
           <div class="d-flex flex-row">
             <li class="nav-item px-2">
-            <a href="#notification" class="nav-link text-black ">
-              <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-bell"/>
-              </svg>
-            </a>
-          </li>
-          <li class="nav-item px-2">
-            <a href="message.html" class="nav-link text-black ">
-              <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-chat"/>
-              </svg>
-            </a>
-          </li>
+              <a href="#notification" class="nav-link text-black">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-bell" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="message.html" class="nav-link text-black">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-chat" />
+                </svg>
+              </a>
+            </li>
           </div>
         </ul>
-  
-        </div>
-  </nav>
+      </div>
+    </nav>
 
-<div class="container-fluid p-0">
-    <div class="container min-vh-100 w-100 p-0">
-
-      <div class="row gap-2 w-100 px-4 my-3">
-        <a class=" btn btn-dark btn-sm col-auto rounded-3" >
-            All
-        </a>
-        <a class="col-auto btn btn-outline-dark btn-sm rounded-3" >
+    <div class="container-fluid p-0">
+      <div class="container min-vh-100 w-100 p-0">
+        <div class="row gap-2 w-100 px-4 my-3">
+          <a class="btn btn-dark btn-sm col-auto rounded-3"> All </a>
+          <a class="col-auto btn btn-outline-dark btn-sm rounded-3">
             Transactions
-        </a>
-        <a class="col-auto btn btn-outline-dark btn-sm rounded-3">
+          </a>
+          <a class="col-auto btn btn-outline-dark btn-sm rounded-3">
             Comments
-        </a>
-        <a class="col-auto btn btn-outline-dark btn-sm rounded-3">
-            Posts
-        </a>
-      </div>
-      <div class="d-flex justify-content-between p-2 align-items-center">
-        <h6 class="fw-bold">New</h6>
-        <button class=" btn text-warning btn-sm rounded-4">Clear all</button>
-      </div>
-<div class=" d-flex flex-column gap-3 bg-warning px-2 bg-opacity-10 py-2 w-100"  style="border-bottom: 1px solid rgba(128, 128, 128, 0.13);">
-        <div class="d-flex flex-row gap-2">
-            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"  style="width: 45px; height: 45px; object-fit: cover;">
-                    <h3 class="text-light fw-bold m-0">B</h3>
+          </a>
+          <a class="col-auto btn btn-outline-dark btn-sm rounded-3"> Posts </a>
+        </div>
+        <div class="d-flex justify-content-between p-2 align-items-center">
+          <h6 class="fw-bold">New</h6>
+          <button class="btn text-warning btn-sm rounded-4">Clear all</button>
+        </div>
+        <div
+          class="d-flex flex-column gap-3 bg-warning px-2 bg-opacity-10 py-2 w-100"
+          style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+        >
+          <div class="d-flex flex-row gap-2">
+            <div
+              class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+              style="width: 45px; height: 45px; object-fit: cover"
+            >
+              <h3 class="text-light fw-bold m-0">B</h3>
             </div>
-                 
-            <div class="d-flex justify-content-between align-items-center w-100 position-relative">
-                 <div class="d-flex flex-column">
-                    <p class="text-black fw-bold m-0">bryan.m <span class="fw-normal">sent you a transaction form</span></p> 
-                    <p class="m-0 text-secondary">Chocolate cake. Goldilocks Masbate City</p>
-                    <p class="fw-semibold text-warning mb-2">₱900 Awaiting your approval</p>
-                    <div class="row g-2">
-                        <div class="col-auto">
-                            <button class="btn btn-warning fw-bold">Review form</button>
-                        </div>
-                        <div class="col-auto">
-                            <button class="btn btn-danger fw-bold">Decline</button>
-                        </div>
-                    </div>
-                </div> 
-                 <div>
-                   <small class="text-secondary position-absolute top-100 end-0">9:21 AM</small>
-                 <p class="bg-warning rounded-5 position-absolute top-0 end-0" style="width: 10px; height: 10px;"></p>
-                </div>
-                
-            </div>
-        </div>
-        <div>
-           
-        </div>
-    </div>
- <div class=" d-flex flex-column gap-3 h-100 position-relative bg-warning px-2 bg-opacity-10 py-2 w-100"  style="border-bottom: 1px solid rgba(128, 128, 128, 0.13);">
-        <div class="d-flex flex-row gap-2">
-            <div class="bg-success bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"  style="width: 45px; height: 45px; object-fit: cover;">
-                      <svg class="bi bi-md align-middle text-success">
-                      <use href="instagram-icons/sprite.svg#bi-shield-check"/>
-                    </svg>
-            </div>
-                 
-            <div class="d-flex justify-content-between align-items-center w-100 position-relative">
-                 <div class="d-flex flex-column">
-                    <p class="text-black fw-bold m-0">Verification approved</p> 
-                    <p class="m-0 text-secondary">You now have the verified badge and can approve transaction forms.</p>   
-                 
-                </div> 
-            <div>
-                   <small class="text-secondary position-absolute top-100 end-0">9:21 AM</small>
-                 <p class="bg-warning rounded-5 position-absolute top-0 end-0" style="width: 10px; height: 10px;"></p>
-                </div>       
-        </div>
-     
-</div>
-<div>
-           
-        </div>
-</div>
-<div class=" d-flex flex-column gap-3 bg-warning px-2 bg-opacity-10 py-2 w-100"  style="border-bottom: 1px solid rgba(128, 128, 128, 0.13);">
-        <div class="d-flex flex-row gap-2">
-           <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"  style="width: 45px; height: 45px; object-fit: cover;">
-                    <h3 class="text-light fw-bold m-0">D</h3>
-            </div>
-                 
-            <div class="d-flex justify-content-between align-items-center w-100 position-relative">
-                 <div class="d-flex flex-column">
-                    <p class="text-black fw-bold m-0">dan.a <span class="fw-normal">posted a delivery update</span></p> 
-                    <p class="m-0 text-secondary">Pick up your items in Masbate City.</p>
-                    <p class="m-0 text-secondary">On the way to Dimasalang.</p>
-                    
-                   
-                    
-                </div> 
-                <div>
-                   <small class="text-secondary position-absolute top-100 end-0">9:21 AM</small>
-                 <p class="bg-warning rounded-5 position-absolute top-0 end-0" style="width: 10px; height: 10px;"></p>
-                </div>
-        </div>
-    </div>
-    <div>
 
-    </div>
-</div>
-
-<h6 class="fw-bold p-2">Earlier</h6>
-   
-<div class=" d-flex flex-column gap-3 p-2 w-100"  style="border-bottom: 1px solid rgba(128, 128, 128, 0.13);">
-        <div class="d-flex flex-row gap-2">
-            <div class="bg-success bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"  style="width: 45px; height: 45px; object-fit: cover;">
-                      <svg class="bi bi-md align-middle text-success">
-                      <use href="instagram-icons/sprite.svg#bi-credit-card"/>
-                    </svg>
+            <div
+              class="d-flex justify-content-between align-items-center w-100 position-relative"
+            >
+              <div class="d-flex flex-column">
+                <p class="text-black fw-bold m-0">
+                  bryan.m
+                  <span class="fw-normal">sent you a transaction form</span>
+                </p>
+                <p class="m-0 text-secondary">
+                  Chocolate cake. Goldilocks Masbate City
+                </p>
+                <p class="fw-semibold text-warning mb-2">
+                  ₱900 Awaiting your approval
+                </p>
+                <div class="row g-2">
+                  <div class="col-auto">
+                    <button class="btn btn-warning fw-bold">Review form</button>
                   </div>
-                 
-            <div class="d-flex justify-content-between align-items-center w-100 position-relative gap-2">
-                 <div class="d-flex flex-column">
-                    <p class="text-black fw-bold m-0">Payment held</p> 
-                    <p class="m-0 text-secondary">₱900 is held safely until you confirm receipt of your order.</p>
-                   
-                    
-                </div> 
-                <div>
-                     <small class="text-secondary position-absolute top-100 end-0">Yesterday</small>
-                </div>
-               
-            </div>
-        </div>
-    <div>
-
-    </div>
-
-</div>
-
-<div class=" d-flex flex-column gap-3 p-2 w-100"  style="border-bottom: 1px solid rgba(128, 128, 128, 0.13);">
-        <div class="d-flex flex-row gap-2">
-           <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"  style="width: 45px; height: 45px; object-fit: cover;">
-                    <h3 class="text-light fw-bold m-0">J</h3>
+                  <div class="col-auto">
+                    <button class="btn btn-danger fw-bold">Decline</button>
                   </div>
-                 
-            <div class="d-flex justify-content-between align-items-center w-100 position-relative">
-                 <div class="d-flex flex-column">
-                    <p class="text-black fw-bold m-0">jake.b <span class="fw-normal">rated you 5 stars </span></p> 
-                    <p class="m-0 text-secondary">"Madali ka transaction. Thank you!"</p>
-                    
-                   
-                    
-                </div> 
-                 <div>
-                  <small class="text-secondary position-absolute top-100 end-0">10:26 AM</small>
-                
-                 </div>
+                </div>
+              </div>
+              <div>
+                <small class="text-secondary position-absolute top-100 end-0"
+                  >9:21 AM</small
+                >
+                <p
+                  class="bg-warning rounded-5 position-absolute top-0 end-0"
+                  style="width: 10px; height: 10px"
+                ></p>
+              </div>
             </div>
+          </div>
+          <div></div>
         </div>
-    <div>
+        <div
+          class="d-flex flex-column gap-3 h-100 position-relative bg-warning px-2 bg-opacity-10 py-2 w-100"
+          style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+        >
+          <div class="d-flex flex-row gap-2">
+            <div
+              class="bg-success bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+              style="width: 45px; height: 45px; object-fit: cover"
+            >
+              <svg class="bi bi-md align-middle text-success">
+                <use href="instagram-icons/sprite.svg#bi-shield-check" />
+              </svg>
+            </div>
 
-    </div>
-
-</div>
-
-</div>
-
-  
-   <div class="offcanvas offcanvas-bottom d-lg-none h-50 p-1 bg-white d-flex flex-column rounded-top-4" tabindex="-1" id="SearchCanvas" style="backdrop-filter: blur(3px);">
-      
-      <div class="offcanvas-header d-flex justify-content-between">
-          <h1 class="fw-bold navbar-brand text-black">Search <span class="text-warning">.</span></h1>
-         <button class="btn btn-close" type="button" data-bs-dismiss="offcanvas"></button>
-       </div>
-      <div class="offcanvas-body">
-          <input id="search" type="search" placeholder="Search" class="form-control rounded-5 mb-3"  style="border: 2px solid rgba(128, 128, 128, 0.13);">
-      
-        <div class="d-flex justify-content-between mb-2 align-items-center">
-          <h6>Recent searches</h6>
-          <button class=" btn text-warning btn-sm rounded-4">Clear all</button>
+            <div
+              class="d-flex justify-content-between align-items-center w-100 position-relative"
+            >
+              <div class="d-flex flex-column">
+                <p class="text-black fw-bold m-0">Verification approved</p>
+                <p class="m-0 text-secondary">
+                  You now have the verified badge and can approve transaction
+                  forms.
+                </p>
+              </div>
+              <div>
+                <small class="text-secondary position-absolute top-100 end-0"
+                  >9:21 AM</small
+                >
+                <p
+                  class="bg-warning rounded-5 position-absolute top-0 end-0"
+                  style="width: 10px; height: 10px"
+                ></p>
+              </div>
+            </div>
+          </div>
+          <div></div>
         </div>
-        <div class="row g-2 mb-3">
-          <div class="col-12 d-flex justify-content-between">
-            <div class="d-flex gap-2">
-              <svg class="bi bi-md align-middle text-secondary">
-                      <use href="instagram-icons/sprite.svg#bi-clock"/>
-                    </svg>
-              Goldilocks cake Masbate City
-
+        <div
+          class="d-flex flex-column gap-3 bg-warning px-2 bg-opacity-10 py-2 w-100"
+          style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+        >
+          <div class="d-flex flex-row gap-2">
+            <div
+              class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+              style="width: 45px; height: 45px; object-fit: cover"
+            >
+              <h3 class="text-light fw-bold m-0">D</h3>
             </div>
-            <button class="btn btn-close"></button>
-          </div>
-          <div class="col-12 d-flex justify-content-between">
-            <div class="d-flex gap-2">
-              <svg class="bi bi-md align-middle text-secondary">
-                      <use href="instagram-icons/sprite.svg#bi-clock"/>
-                    </svg>
-                    Traveler to Cataingan
 
+            <div
+              class="d-flex justify-content-between align-items-center w-100 position-relative"
+            >
+              <div class="d-flex flex-column">
+                <p class="text-black fw-bold m-0">
+                  dan.a <span class="fw-normal">posted a delivery update</span>
+                </p>
+                <p class="m-0 text-secondary">
+                  Pick up your items in Masbate City.
+                </p>
+                <p class="m-0 text-secondary">On the way to Dimasalang.</p>
+              </div>
+              <div>
+                <small class="text-secondary position-absolute top-100 end-0"
+                  >9:21 AM</small
+                >
+                <p
+                  class="bg-warning rounded-5 position-absolute top-0 end-0"
+                  style="width: 10px; height: 10px"
+                ></p>
+              </div>
             </div>
-            <button class="btn btn-close"></button>
           </div>
-          <div class="col-12 d-flex justify-content-between">
-            <div class="d-flex gap-2">
-              <svg class="bi bi-md align-middle text-secondary">
-                      <use href="instagram-icons/sprite.svg#bi-clock"/>
-                    </svg>
-              Pandesal Dimasalang
-
-            </div>
-            <button class="btn btn-close"></button>
-          </div>
+          <div></div>
         </div>
-        <h6>Popular destinatinons</h6>
-        <div class="row g-1">
-          <div class="col-auto">
-            <a href="" class="btn btn-dark btn-sm rounded-5 ">
-               <svg class="bi bi-md align-middle ">
-                      <use href="instagram-icons/sprite.svg#bi-geo-alt"/>
-                    </svg>
-                    Masbate City
-            </a>
+
+        <h6 class="fw-bold p-2">Earlier</h6>
+
+        <div
+          class="d-flex flex-column gap-3 p-2 w-100"
+          style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+        >
+          <div class="d-flex flex-row gap-2">
+            <div
+              class="bg-success bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+              style="width: 45px; height: 45px; object-fit: cover"
+            >
+              <svg class="bi bi-md align-middle text-success">
+                <use href="instagram-icons/sprite.svg#bi-credit-card" />
+              </svg>
+            </div>
+
+            <div
+              class="d-flex justify-content-between align-items-center w-100 position-relative gap-2"
+            >
+              <div class="d-flex flex-column">
+                <p class="text-black fw-bold m-0">Payment held</p>
+                <p class="m-0 text-secondary">
+                  ₱900 is held safely until you confirm receipt of your order.
+                </p>
+              </div>
+              <div>
+                <small class="text-secondary position-absolute top-100 end-0"
+                  >Yesterday</small
+                >
+              </div>
+            </div>
           </div>
-          <div class="col-auto">
-            <a href="" class="btn btn-dark btn-sm rounded-5">
-               <svg class="bi bi-md align-middle ">
-                      <use href="instagram-icons/sprite.svg#bi-geo-alt"/>
-                    </svg>
-                    Dimasalang
-            </a>
+          <div></div>
+        </div>
+
+        <div
+          class="d-flex flex-column gap-3 p-2 w-100"
+          style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+        >
+          <div class="d-flex flex-row gap-2">
+            <div
+              class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+              style="width: 45px; height: 45px; object-fit: cover"
+            >
+              <h3 class="text-light fw-bold m-0">J</h3>
+            </div>
+
+            <div
+              class="d-flex justify-content-between align-items-center w-100 position-relative"
+            >
+              <div class="d-flex flex-column">
+                <p class="text-black fw-bold m-0">
+                  jake.b <span class="fw-normal">rated you 5 stars </span>
+                </p>
+                <p class="m-0 text-secondary">
+                  "Madali ka transaction. Thank you!"
+                </p>
+              </div>
+              <div>
+                <small class="text-secondary position-absolute top-100 end-0"
+                  >10:26 AM</small
+                >
+              </div>
+            </div>
           </div>
-          <div class="col-auto">
-            <a href="" class="btn btn-dark btn-sm rounded-5">
-               <svg class="bi bi-md align-middle ">
-                      <use href="instagram-icons/sprite.svg#bi-geo-alt"/>
-                    </svg>
-                    Mandaon
-            </a>
+          <div></div>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-bottom d-lg-none h-50 p-1 bg-white d-flex flex-column rounded-top-4"
+        tabindex="-1"
+        id="SearchCanvas"
+        style="backdrop-filter: blur(3px)"
+      >
+        <div class="offcanvas-header d-flex justify-content-between">
+          <h1 class="fw-bold navbar-brand text-black">
+            Search <span class="text-warning">.</span>
+          </h1>
+          <button
+            class="btn btn-close"
+            type="button"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <input
+            id="search"
+            type="search"
+            placeholder="Search"
+            class="form-control rounded-5 mb-3"
+            style="border: 2px solid rgba(128, 128, 128, 0.13)"
+          />
+
+          <div class="d-flex justify-content-between mb-2 align-items-center">
+            <h6>Recent searches</h6>
+            <button class="btn text-warning btn-sm rounded-4">Clear all</button>
           </div>
-          <div class="col-auto">
-            <a href="" class="btn btn-dark btn-sm rounded-5">
-               <svg class="bi bi-md align-middle ">
-                      <use href="instagram-icons/sprite.svg#bi-geo-alt"/>
-                    </svg>
-                    Cataingan
-            </a>
+          <div class="row g-2 mb-3">
+            <div class="col-12 d-flex justify-content-between">
+              <div class="d-flex gap-2">
+                <svg class="bi bi-md align-middle text-secondary">
+                  <use href="instagram-icons/sprite.svg#bi-clock" />
+                </svg>
+                Goldilocks cake Masbate City
+              </div>
+              <button class="btn btn-close"></button>
+            </div>
+            <div class="col-12 d-flex justify-content-between">
+              <div class="d-flex gap-2">
+                <svg class="bi bi-md align-middle text-secondary">
+                  <use href="instagram-icons/sprite.svg#bi-clock" />
+                </svg>
+                Traveler to Cataingan
+              </div>
+              <button class="btn btn-close"></button>
+            </div>
+            <div class="col-12 d-flex justify-content-between">
+              <div class="d-flex gap-2">
+                <svg class="bi bi-md align-middle text-secondary">
+                  <use href="instagram-icons/sprite.svg#bi-clock" />
+                </svg>
+                Pandesal Dimasalang
+              </div>
+              <button class="btn btn-close"></button>
+            </div>
           </div>
-          <div class="col-auto">
-            <a href="" class="btn btn-dark btn-sm rounded-5">
-               <svg class="bi bi-md align-middle ">
-                      <use href="instagram-icons/sprite.svg#bi-geo-alt"/>
-                    </svg>
-                    Balud
-            </a>
+          <h6>Popular destinatinons</h6>
+          <div class="row g-1">
+            <div class="col-auto">
+              <a href="" class="btn btn-dark btn-sm rounded-5">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                </svg>
+                Masbate City
+              </a>
+            </div>
+            <div class="col-auto">
+              <a href="" class="btn btn-dark btn-sm rounded-5">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                </svg>
+                Dimasalang
+              </a>
+            </div>
+            <div class="col-auto">
+              <a href="" class="btn btn-dark btn-sm rounded-5">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                </svg>
+                Mandaon
+              </a>
+            </div>
+            <div class="col-auto">
+              <a href="" class="btn btn-dark btn-sm rounded-5">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                </svg>
+                Cataingan
+              </a>
+            </div>
+            <div class="col-auto">
+              <a href="" class="btn btn-dark btn-sm rounded-5">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                </svg>
+                Balud
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class=" p-3 offcanvas offcanvas-bottom d-lg-none bg-white rounded-top-4" id="CartCanvas" style="backdrop-filter: blur(6px);">
-      <div class=" d-flex flex-column j">
-        <div class="d-flex justify-content-between">
-          <h5 class="text-black">Active transaction  <span class="badge rounded-pill text-warning bg-warning bg-opacity-25 align-middle">Payment held</span></h5>
-           
-           <button class="btn btn-close" type="button" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <h5 class="text-black">Seiko Watch from Mandaon</h5>         
+      <div
+        class="p-3 offcanvas offcanvas-bottom d-lg-none bg-white rounded-top-4"
+        id="CartCanvas"
+        style="backdrop-filter: blur(6px)"
+      >
+        <div class="d-flex flex-column j">
+          <div class="d-flex justify-content-between">
+            <h5 class="text-black">
+              Active transaction
+              <span
+                class="badge rounded-pill text-warning bg-warning bg-opacity-25 align-middle"
+                >Payment held</span
+              >
+            </h5>
+
+            <button
+              class="btn btn-close"
+              type="button"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <h5 class="text-black">Seiko Watch from Mandaon</h5>
           <p class="text-dark-emphasis">with Dan A. Mandaon to Dimasalang</p>
-         
-      </div>
-      <div class="offcanvas-body "  tabindex="-1" id="CartCanvas">
-        <div class="row g-1 text-center">
+        </div>
+        <div class="offcanvas-body" tabindex="-1" id="CartCanvas">
+          <div class="row g-1 text-center">
             <div class="col-3">
-              <div class="progress" style="height: 5px;">
-                <div class="progress-bar bg-success" style="width: 100%;">
-                </div>
+              <div class="progress" style="height: 5px">
+                <div class="progress-bar bg-success" style="width: 100%"></div>
               </div>
               <small class="text-dark-emphasis">Approved</small>
             </div>
             <div class="col-3 text-center">
-              <div class="progress" style="height: 5px;">
-                <div class="progress-bar bg-success" style="width: 100%;">
-                </div>
+              <div class="progress" style="height: 5px">
+                <div class="progress-bar bg-success" style="width: 100%"></div>
               </div>
               <small class="text-dark-emphasis">Paid</small>
             </div>
             <div class="col-3 text-center">
-              <div class="progress" style="height: 5px;">
-                <div class="progress-bar bg-warning" style="width: 100%;">
-                </div>
+              <div class="progress" style="height: 5px">
+                <div class="progress-bar bg-warning" style="width: 100%"></div>
               </div>
               <small class="text-warning">Purchased</small>
             </div>
-             <div class="col-3 text-center">
-              <div class="progress" style="height: 5px;">
-                <div class="progress-bar bg-dark" style="width: 100%;">
-                </div>
+            <div class="col-3 text-center">
+              <div class="progress" style="height: 5px">
+                <div class="progress-bar bg-dark" style="width: 100%"></div>
               </div>
               <small class="text-dark-emphasis">Delivered</small>
             </div>
           </div>
+        </div>
       </div>
+
+      <nav
+        class="navbar navbar-expand-lg bg-white sticky-bottom d-lg-none py-0"
+        style="border-top: 2px solid rgba(128, 128, 128, 0.13)"
+      >
+        <div class="container">
+          <ul class="navbar-nav w-100">
+            <div class="d-flex justify-content-around align-items-center">
+              <li class="nav-item">
+                <a
+                  href="index.html"
+                  class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center"
+                >
+                  <svg class="bi bi-md align-middle">
+                    <use href="instagram-icons/sprite.svg#bi-house-door" />
+                  </svg>
+                  <span><small>Home</small></span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="#search"
+                  class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center"
+                  data-bs-target="#SearchCanvas"
+                  data-bs-toggle="offcanvas"
+                >
+                  <svg class="bi bi-md align-middle">
+                    <use href="instagram-icons/sprite.svg#bi-search" />
+                  </svg>
+                  <span><small>Search</small></span>
+                </a>
+              </li>
+
+              <li
+                class="nav-item d-flex align-items-center justify-content-center bg-warning-subtle rounded-4"
+                style="width: 50px; height: 50px"
+              >
+                <a
+                  href="#post"
+                  class="nav-link text-warning d-flex flex-column justify-content-center align-items-center"
+                >
+                  <svg class="bi bi-lg align-middle">
+                    <use href="instagram-icons/sprite.svg#bi-plus-square" />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="#cart"
+                  class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#CartCanvas"
+                >
+                  <svg class="bi bi-md align-middle">
+                    <use href="instagram-icons/sprite.svg#bi-bag" />
+                  </svg>
+                  <span><small>Activity</small></span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="profile.html"
+                  class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center"
+                  type="button"
+                >
+                  <svg class="bi bi-md align-middle">
+                    <use href="instagram-icons/sprite.svg#bi-person-circle" />
+                  </svg>
+                  <span><small>Profile</small></span>
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </nav>
     </div>
 
-   <nav class="navbar navbar-expand-lg bg-white sticky-bottom d-lg-none py-0" style="border-top: 2px solid rgba(128, 128, 128, 0.13);">
-        <div class="container ">
-            <ul class="navbar-nav w-100 ">  
-                <div class="d-flex justify-content-around align-items-center">
-                  
-                     <li class="nav-item" >
-                            <a href="index.html" class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center">
-                                <svg class="bi bi-md align-middle"
-                                ><use href="instagram-icons/sprite.svg#bi-house-door"/>
-                                </svg>
-                                <span ><small>Home</small></span>
-                             </a>
-                    </li>
-                   
-                    
-                        <li class="nav-item">
-                            <a href="#search" class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center" data-bs-target="#SearchCanvas" data-bs-toggle="offcanvas">
-                                <svg class="bi bi-md align-middle"
-                                ><use href="instagram-icons/sprite.svg#bi-search"/>
-                            </svg>
-                             <span ><small>Search</small></span>
-                            </a>
-                    </li>
-                   
-                  
-                        <li class="nav-item d-flex align-items-center justify-content-center bg-warning-subtle  rounded-4" style="width: 50px; height: 50px;"  >
-                            <a href="#post" class="nav-link  text-warning d-flex flex-column justify-content-center align-items-center">
-                                <svg class="bi bi-lg align-middle"
-                                ><use href="instagram-icons/sprite.svg#bi-plus-square"/>
-                            </svg>
-                            
-                            </a>
-                    </li>
-                    
-                        <li class="nav-item"  >
-                            <a href="#cart" class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#CartCanvas">
-                                <svg class="bi bi-md align-middle"
-                               ><use href="instagram-icons/sprite.svg#bi-bag"/>
-                            </svg>
-                            <span ><small>Activity</small></span>
-                            </a>
-                    </li>
-                    
-                        <li class="nav-item " >
-                            <a href="profile.html" class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center" type="button">
-                                <svg class="bi bi-md align-middle"><use href="instagram-icons/sprite.svg#bi-person-circle"/>
-                            </svg>
-                               <span ><small>Profile</small></span>
-                            </a>
-                    </li>
-                   
-                </div>
-            </ul>
-        </div>
-    </nav>
-  
-</body>
-
-<script src="bootstrap/js/bootstrap.bundle.min.js">
-
-</script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
