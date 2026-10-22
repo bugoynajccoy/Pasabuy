@@ -11,7 +11,7 @@
   </head>
   <body class="bg-white">
     <nav
-      class="navbar navbar-expand-lg bg-white text-black d-lg-none sticky-top"
+      class="navbar navbar-expand-lg bg-white text-black sticky-top"
       style="border-bottom: 2px solid rgba(128, 128, 128, 0.13)"
     >
       <div class="container">
@@ -238,48 +238,54 @@
       </div>
 
       <nav
-        class="navbar navbar-expand-lg bg-white sticky-bottom d-lg-none py-2"
+        class="navbar navbar-expand-lg bg-white sticky-bottom py-2"
         style="border-top: 2px solid rgba(128, 128, 128, 0.13)"
       >
-        <div class="container">
-          <ul class="navbar-nav w-100">
-            <div class="d-flex justify-content-around align-items-center">
-              <li
-                class="nav-item bg-warning bg-opacity-25 rounded-circle"
-                style="width: 40px; height: 40px"
-              >
-                <a
-                  href="index.html"
-                  class="nav-link text-warning d-flex flex-column justify-content-center align-items-center"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#TransactionForm"
+        <div class="container d-flex align-items-center justify-content-center">
+          <ul class="navbar-nav">
+            <div class="row">
+              <div class="col-2">
+                <li
+                  class="nav-item bg-warning bg-opacity-25 rounded-circle"
+                  style="width: 40px; height: 40px"
                 >
-                  <svg class="bi bi-md align-middle">
-                    <use href="instagram-icons/sprite.svg#bi-plus-circle" />
-                  </svg>
-                </a>
-              </li>
+                  <a
+                    href="index.html"
+                    class="nav-link text-warning d-flex flex-column justify-content-center align-items-center"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#TransactionForm"
+                  >
+                    <svg class="bi bi-md align-middle">
+                      <use href="instagram-icons/sprite.svg#bi-plus-circle" />
+                    </svg>
+                  </a>
+                </li>
+              </div>
 
-              <input
-                type="text"
-                placeholder="Message"
-                class="form-control rounded-5 w-75"
-              />
+              <div class="col-8">
+                <input
+                  type="text"
+                  placeholder="Message"
+                  class="form-control rounded-5 w-100"
+                />
+              </div>
 
-              <li
-                class="nav-item bg-warning rounded-circle"
-                style="width: 40px; height: 40px"
-              >
-                <a
-                  href="profile.html"
-                  class="nav-link text-black d-flex flex-column justify-content-center align-items-center"
-                  type="button"
+              <div class="col-2">
+                <li
+                  class="nav-item bg-warning rounded-circle"
+                  style="width: 40px; height: 40px"
                 >
-                  <svg class="bi bi-md align-middle">
-                    <use href="instagram-icons/sprite.svg#bi-send" />
-                  </svg>
-                </a>
-              </li>
+                  <a
+                    href="profile.html"
+                    class="nav-link text-black d-flex flex-column justify-content-center align-items-center"
+                    type="button"
+                  >
+                    <svg class="bi bi-md align-middle">
+                      <use href="instagram-icons/sprite.svg#bi-send" />
+                    </svg>
+                  </a>
+                </li>
+              </div>
             </div>
           </ul>
         </div>

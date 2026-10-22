@@ -74,8 +74,21 @@ svg {
   scrollbar-width: none;
 }
 
-#home::-webkit-scrollbar {
+main.col-lg-6::-webkit-scrollbar {
   display: none;
+}
+
+.container.fluid::-webkit-scrollbar {
+  display: none;
+}
+main.col-lg-6::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.452);
+  border-radius: 10px;
+  height: 5px;
+}
+
+main.col-lg-6::-webkit-scrollbar-thumb:hover {
+  background: orange;
 }
 
 #right-panel::-webkit-scrollbar {

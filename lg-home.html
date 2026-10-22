@@ -1,0 +1,2343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMTR</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="instagram-icons/icons.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-white text-black d-lg-none sticky-top"
+      style="border-bottom: 2px solid rgba(128, 128, 128, 0.13)"
+    >
+      <div class="container">
+        <h3 class="fw-bold p-2 navbar-brand text-black">
+          Pasabuy <span class="text-warning">.</span>
+        </h3>
+
+        <ul class="navbar-nav">
+          <div class="d-flex flex-row">
+            <li class="nav-item px-2">
+              <a href="notification.html" class="nav-link text-black">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-bell" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="message.html" class="nav-link text-black">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-chat" />
+                </svg>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid min-vh-100">
+      <div class="row">
+        <aside
+          class="position-sticky top-0 vh-100 overflow-auto col-lg-2 list-group list-group-flush bg-white text-black p-2 d-none d-lg-block stic"
+          id="sidebar"
+        >
+          <h3 class="fw-bold p-2">
+            Pasabuy <span class="text-warning">.</span>
+          </h3>
+          <button
+            class="list-group-item list-group-item-action rounded-2 mb-2 active"
+            data-bs-target="#home"
+            data-bs-toggle="tab"
+          >
+            <svg class="bi bi-md align-middle">
+              <use href="instagram-icons/sprite.svg#bi-house-door" />
+            </svg>
+            Home
+          </button>
+          <a
+            href="#search"
+            class="list-group-item list-group-item-action rounded-2 mb-2"
+          >
+            <svg class="bi bi-md align-middle">
+              <use href="instagram-icons/sprite.svg#bi-search" />
+            </svg>
+            Search</a
+          >
+          <a
+            href="#explore"
+            class="list-group-item list-group-item-action rounded-2 mb-2"
+          >
+            <svg class="bi bi-md align-middle">
+              <use href="instagram-icons/sprite.svg#bi-compass" />
+            </svg>
+            Explore</a
+          >
+          <button
+            class="list-group-item list-group-item-action rounded-2 mb-2"
+            data-bs-target="#message"
+            data-bs-toggle="tab"
+          >
+            <svg class="bi bi-md align-middle">
+              <use href="instagram-icons/sprite.svg#bi-chat" />
+            </svg>
+            Messages
+          </button>
+          <button
+            class="list-group-item list-group-item-action rounded-2 mb-2"
+            data-bs-target="#notification"
+            data-bs-toggle="tab"
+          >
+            <svg class="bi bi-md align-middle">
+              <use href="instagram-icons/sprite.svg#bi-heart" />
+            </svg>
+            Notifications
+          </button>
+          <a
+            href="#post"
+            class="list-group-item list-group-item-action rounded-2 mb-2"
+          >
+            <svg class="bi bi-sm align-middle">
+              <use href="instagram-icons/sprite.svg#bi-plus-square" />
+            </svg>
+            Post</a
+          >
+          <button
+            class="list-group-item list-group-item-action rounded-2 mb-2"
+            data-bs-toggle="tab"
+            data-bs-target="#profile"
+          >
+            <svg class="bi bi-sm align-middle">
+              <use href="instagram-icons/sprite.svg#bi-person-circle" />
+            </svg>
+            Profile
+          </button>
+        </aside>
+        <main class="col-lg-6 p-0 position-sticky vh-100 overflow-auto mt-3">
+          <div class="tab-content">
+            <div class="tab-pane active show fade" id="home">
+              <div
+                class="container pb-3"
+                style="border-bottom: 2px solid rgba(128, 128, 128, 0.13)"
+              >
+                <div class="card h-100 border-0">
+                  <div
+                    class="card-header border-0 bg-white d-flex flex-row gap-3"
+                  >
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#userIDjake"
+                      type="button"
+                      class="bg-primary border-0 fw-bold text-light fs-4 rounded-circle d-flex align-items-center justify-content-center"
+                      style="width: 45px; height: 45px"
+                    >
+                      <img src="" alt="" />
+                      J
+                    </button>
+                    <div class="name d-flex gap-0 flex-column">
+                      <div class="text-black fw-bold">jake.b</div>
+                      <div class="text-dark">Requester.Dimasalang</div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="card position-relative rounded-3 my-1 text-dark d-flex align-items-start justify-content-center flex-column"
+                  >
+                    <img
+                      src="bdaycake.png"
+                      alt="birthday cake"
+                      class="card-img-top"
+                    />
+                    <span
+                      class="badge rounded-pill bg-dark bg-opacity-50 text-light position-absolute top-0 end-0 m-2"
+                    >
+                      <svg class="bi bi-sm align-middle">
+                        <use href="instagram-icons/sprite.svg#bi-clock" />
+                      </svg>
+                      Needed by Saturday afternoon</span
+                    >
+                  </div>
+
+                  <ul class="navbar-nav">
+                    <div class="d-flex flex-row">
+                      <li class="nav-item px-2">
+                        <a href="#notification" class="nav-link text-black">
+                          <svg class="bi bi-md align-middle">
+                            <use href="instagram-icons/sprite.svg#bi-heart" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a
+                          href=""
+                          class="nav-link text-black"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#comment"
+                        >
+                          <svg class="bi bi-md align-middle">
+                            <use href="instagram-icons/sprite.svg#bi-chat" />
+                          </svg>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                  <div class="d-flex text-black bg-white">
+                    <p>
+                      <span class="fw-bold">jake.b</span> Looking for a traveler
+                      na makadto sa Masbate City this week. Chocolate cake from
+                      Goldilocks Masbate City branch.
+                    </p>
+                  </div>
+                  <div class="p-2">
+                    <div
+                      class="rounded-3 px-3 py-2 d-flex bg-success-subtle align-items-center justify-content-start gap-3"
+                    >
+                      <svg class="bi bi-md align-middle text-success">
+                        <use
+                          href="instagram-icons/sprite.svg#bi-shield-check"
+                        />
+                      </svg>
+                      <div class="d-flex flex-column">
+                        <p class="text-success fw-bold m-0">
+                          Payment protected
+                        </p>
+                        <small class="text-success m-0"
+                          >Held safely until you confirm the cake
+                          arrived.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column bg-white">
+                    <p class="text-secondary">2 offers so far</p>
+                    <button class="btn btn-warning fw-bold">
+                      <a href="message.html" class="nav-link"
+                        >Offer to deliver</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="container my-4 pb-3"
+                style="border-bottom: 2px solid rgba(128, 128, 128, 0.13)"
+              >
+                <div class="card h-100 border-0">
+                  <div
+                    class="card-header border-0 bg-white d-flex flex-row gap-3"
+                  >
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#userIDjerume"
+                      type="button"
+                      class="bg-primary border-0 fw-bold text-light fs-4 rounded-circle d-flex align-items-center justify-content-center"
+                      style="width: 45px; height: 45px"
+                    >
+                      J
+                    </button>
+                    <div class="name d-flex gap-0 flex-column">
+                      <div class="text-black fw-bold">jerume.a</div>
+                      <div class="text-dark">Traveler.Dimasalang</div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="w-100 card p-2 rounded-3 py-3 my-1 text-dark d-flex align-items-start justify-content-center flex-column"
+                    style="max-height: 300px"
+                  >
+                    <div class="card-header p-0 py-2 bg-white w-100">
+                      <h5 class="fw-bold">
+                        Dimasalang <span class="text-secondary">⟼</span> Masbate
+                        City
+                      </h5>
+                      <span
+                        class="badge rounded-pill bg-warning bg-opacity-25 text-warning"
+                      >
+                        <svg class="bi bi-sm align-middle">
+                          <use href="instagram-icons/sprite.svg#bi-clock" />
+                        </svg>
+                        Leaves Saturday,7:00 AM. Orders close Fri 6 PM</span
+                      >
+                    </div>
+                    <div class="d-flex w-100 justify-content-around">
+                      <div class="d-flex flex-column">
+                        <small class="text-muted fw-medium">Service fee</small>
+                        <p class="fw-bold">from ₱80</p>
+                      </div>
+                      <div
+                        class="d-flex flex-column px-2"
+                        style="
+                          border-left: 1px solid rgba(128, 128, 128, 0.507);
+                        "
+                      >
+                        <small class="text-muted fw-medium">Space left</small>
+                        <p class="fw-bold">3 to 5 items</p>
+                      </div>
+                      <div
+                        class="d-flex flex-column px-2"
+                        style="
+                          border-left: 1px solid rgba(128, 128, 128, 0.507);
+                        "
+                      >
+                        <small class="text-muted fw-medium">Returns</small>
+                        <p class="fw-bold">Sun, 4 PM</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="navbar-nav">
+                    <div class="d-flex flex-row">
+                      <li class="nav-item px-2">
+                        <a href="#notification" class="nav-link text-black">
+                          <svg class="bi bi-md align-middle">
+                            <use href="instagram-icons/sprite.svg#bi-heart" />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a
+                          href="message.html"
+                          class="nav-link text-black"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#comment"
+                        >
+                          <svg class="bi bi-md align-middle">
+                            <use href="instagram-icons/sprite.svg#bi-chat" />
+                          </svg>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                  <div class="d-flex text-black bg-white">
+                    <p>
+                      <span class="fw-bold">jerume.a</span> Going to the city
+                      this Saturday. Ma motor, basi my mapa Pasabuy dm lang.
+                    </p>
+                  </div>
+
+                  <div class="p-2">
+                    <div
+                      class="rounded-3 px-3 py-2 d-flex bg-success-subtle align-items-center justify-content-start gap-3"
+                    >
+                      <svg class="bi bi-md align-middle text-success">
+                        <use
+                          href="instagram-icons/sprite.svg#bi-shield-check"
+                        />
+                      </svg>
+                      <div class="d-flex flex-column">
+                        <p class="text-success fw-bold m-0">
+                          ID Verified.12 trips completed
+                        </p>
+                        <small class="text-success m-0"
+                          >Member since Oct 2026.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-column bg-white mt-2">
+                    <button class="btn btn-primary fw-bold">
+                      <a href="message.html" class="nav-link">Send a message</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="notification">
+              <div class="container min-vh-100 w-100 p-0">
+                <div class="row gap-2 w-100 px-4 my-3">
+                  <a class="btn btn-dark btn-sm col-auto rounded-3"> All </a>
+                  <a class="col-auto btn btn-outline-dark btn-sm rounded-3">
+                    Transactions
+                  </a>
+                  <a class="col-auto btn btn-outline-dark btn-sm rounded-3">
+                    Comments
+                  </a>
+                  <a class="col-auto btn btn-outline-dark btn-sm rounded-3">
+                    Posts
+                  </a>
+                </div>
+                <div
+                  class="d-flex justify-content-between p-2 align-items-center"
+                >
+                  <h6 class="fw-bold">New</h6>
+                  <button class="btn text-warning btn-sm rounded-4">
+                    Clear all
+                  </button>
+                </div>
+                <div
+                  class="d-flex flex-column gap-3 bg-warning px-2 bg-opacity-10 py-2 w-100"
+                  style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div class="d-flex flex-row gap-2">
+                    <div
+                      class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 45px; height: 45px; object-fit: cover"
+                    >
+                      <h3 class="text-light fw-bold m-0">B</h3>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center w-100 position-relative"
+                    >
+                      <div class="d-flex flex-column">
+                        <p class="text-black fw-bold m-0">
+                          bryan.m
+                          <span class="fw-normal"
+                            >sent you a transaction form</span
+                          >
+                        </p>
+                        <p class="m-0 text-secondary">
+                          Chocolate cake. Goldilocks Masbate City
+                        </p>
+                        <p class="fw-semibold text-warning mb-2">
+                          ₱900 Awaiting your approval
+                        </p>
+                        <div class="row g-2">
+                          <div class="col-auto">
+                            <button class="btn btn-warning fw-bold">
+                              Review form
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <button class="btn btn-danger fw-bold">
+                              Decline
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <small
+                          class="text-secondary position-absolute top-100 end-0"
+                          >9:21 AM</small
+                        >
+                        <p
+                          class="bg-warning rounded-5 position-absolute top-0 end-0"
+                          style="width: 10px; height: 10px"
+                        ></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div></div>
+                </div>
+                <div
+                  class="d-flex flex-column gap-3 h-100 position-relative bg-warning px-2 bg-opacity-10 py-2 w-100"
+                  style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div class="d-flex flex-row gap-2">
+                    <div
+                      class="bg-success bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 45px; height: 45px; object-fit: cover"
+                    >
+                      <svg class="bi bi-md align-middle text-success">
+                        <use
+                          href="instagram-icons/sprite.svg#bi-shield-check"
+                        />
+                      </svg>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center w-100 position-relative"
+                    >
+                      <div class="d-flex flex-column">
+                        <p class="text-black fw-bold m-0">
+                          Verification approved
+                        </p>
+                        <p class="m-0 text-secondary">
+                          You now have the verified badge and can approve
+                          transaction forms.
+                        </p>
+                      </div>
+                      <div>
+                        <small
+                          class="text-secondary position-absolute top-100 end-0"
+                          >9:21 AM</small
+                        >
+                        <p
+                          class="bg-warning rounded-5 position-absolute top-0 end-0"
+                          style="width: 10px; height: 10px"
+                        ></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div></div>
+                </div>
+                <div
+                  class="d-flex flex-column gap-3 bg-warning px-2 bg-opacity-10 py-2 w-100"
+                  style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div class="d-flex flex-row gap-2">
+                    <div
+                      class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 45px; height: 45px; object-fit: cover"
+                    >
+                      <h3 class="text-light fw-bold m-0">D</h3>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center w-100 position-relative"
+                    >
+                      <div class="d-flex flex-column">
+                        <p class="text-black fw-bold m-0">
+                          dan.a
+                          <span class="fw-normal"
+                            >posted a delivery update</span
+                          >
+                        </p>
+                        <p class="m-0 text-secondary">
+                          Pick up your items in Masbate City.
+                        </p>
+                        <p class="m-0 text-secondary">
+                          On the way to Dimasalang.
+                        </p>
+                      </div>
+                      <div>
+                        <small
+                          class="text-secondary position-absolute top-100 end-0"
+                          >9:21 AM</small
+                        >
+                        <p
+                          class="bg-warning rounded-5 position-absolute top-0 end-0"
+                          style="width: 10px; height: 10px"
+                        ></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div></div>
+                </div>
+
+                <h6 class="fw-bold p-2">Earlier</h6>
+
+                <div
+                  class="d-flex flex-column gap-3 p-2 w-100"
+                  style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div class="d-flex flex-row gap-2">
+                    <div
+                      class="bg-success bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 45px; height: 45px; object-fit: cover"
+                    >
+                      <svg class="bi bi-md align-middle text-success">
+                        <use href="instagram-icons/sprite.svg#bi-credit-card" />
+                      </svg>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center w-100 position-relative gap-2"
+                    >
+                      <div class="d-flex flex-column">
+                        <p class="text-black fw-bold m-0">Payment held</p>
+                        <p class="m-0 text-secondary">
+                          ₱900 is held safely until you confirm receipt of your
+                          order.
+                        </p>
+                      </div>
+                      <div>
+                        <small
+                          class="text-secondary position-absolute top-100 end-0"
+                          >Yesterday</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div></div>
+                </div>
+
+                <div
+                  class="d-flex flex-column gap-3 p-2 w-100"
+                  style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div class="d-flex flex-row gap-2">
+                    <div
+                      class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                      style="width: 45px; height: 45px; object-fit: cover"
+                    >
+                      <h3 class="text-light fw-bold m-0">J</h3>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center w-100 position-relative"
+                    >
+                      <div class="d-flex flex-column">
+                        <p class="text-black fw-bold m-0">
+                          jake.b
+                          <span class="fw-normal">rated you 5 stars </span>
+                        </p>
+                        <p class="m-0 text-secondary">
+                          "Madali ka transaction. Thank you!"
+                        </p>
+                      </div>
+                      <div>
+                        <small
+                          class="text-secondary position-absolute top-100 end-0"
+                          >10:26 AM</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="profile">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center px-2"
+              >
+                <div
+                  class="d-flex rounded-circle bg-primary align-items-center justify-content-center flex-shrink-0"
+                  style="width: 80px; height: 80px"
+                >
+                  <p class="fs-1 text-white fw-bold text-center m-0">B</p>
+                </div>
+                <h5 class="fw-bold m-0 mt-2">bugoyna.jccoy</h5>
+                <div class="text-primary mb-2">
+                  <svg class="bi bi-sm align-middle">
+                    <use href="instagram-icons/sprite.svg#bi-patch-check" />
+                  </svg>
+                  <small>Verified Traveler &amp; Requester</small>
+                </div>
+                <div
+                  class="row flex-grow-1 mb-2 align-items-center text-center w-100"
+                >
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="m-0 fw-bold">12</h5>
+                      <small class="m-0 text-secondary">Deliveries</small>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="m-0 fw-bold">10</h5>
+                      <small class="m-0 text-secondary">Requests</small>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="m-0 fw-bold">4.8</h5>
+                      <small class="m-0 text-secondary">Ratings</small>
+                    </div>
+                  </div>
+                </div>
+                <p class="m-0">Weekly sa City every Saturday</p>
+                <div class="text-muted">
+                  <svg class="bi bi-sm align-middle">
+                    <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                  </svg>
+                  <small>Dimasalang. Member since Oct 2026</small>
+                </div>
+              </div>
+
+              <div
+                class="row mt-3 g-1 align-items-center justify-content-center"
+              >
+                <div class="col-7">
+                  <button class="btn fw-bold w-100 custom-button btn-warning">
+                    Edit profile
+                  </button>
+                </div>
+                <div class="col-2">
+                  <button
+                    class="btn fw-bold rounded-5 d-flex align-items-center justify-content-center"
+                    style="width: 40px; height: 40px"
+                  >
+                    <svg class="bi bi-md align-middle text-warning">
+                      <use href="instagram-icons/sprite.svg#bi-share" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="bg-warning bg-opacity-10 p-2 mt-3 rounded-4">
+                <div class="d-flex justify-content-between rounded-3">
+                  <small class="text-secondary m-0 fw-bold"
+                    >Active transaction</small
+                  >
+                  <p
+                    class="badge rounded-pill text-warning bg-warning bg-opacity-25 align-middle"
+                  >
+                    Payment held
+                  </p>
+                </div>
+                <div class="d-flex flex-column">
+                  <h5 class="text-black m-0">Seiko Watch from Mandaon</h5>
+                  <p class="text-dark-emphasis">
+                    with Dan A. Mandaon to Dimasalang
+                  </p>
+                  <div class="row g-1 text-center">
+                    <div class="col-3">
+                      <div class="progress" style="height: 5px">
+                        <div
+                          class="progress-bar bg-success"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                      <small class="text-dark-emphasis">Approved</small>
+                    </div>
+                    <div class="col-3">
+                      <div class="progress" style="height: 5px">
+                        <div
+                          class="progress-bar bg-success"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                      <small class="text-dark-emphasis">Paid</small>
+                    </div>
+                    <div class="col-3">
+                      <div class="progress" style="height: 5px">
+                        <div
+                          class="progress-bar bg-warning"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                      <small class="text-warning">Purchased</small>
+                    </div>
+                    <div class="col-3">
+                      <div class="progress" style="height: 5px">
+                        <div
+                          class="progress-bar bg-dark"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                      <small class="text-dark-emphasis">Delivered</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul
+                class="nav nav-tabs w-100"
+                style="
+                  --bs-nav-tabs-link-active-bg: none;
+                  --bs-nav-tabs-link-active-color: orange;
+                  --bs-nav-tabs-link-color: black;
+                "
+              >
+                <div
+                  class="d-flex justify-content-around align-items-center w-100"
+                >
+                  <li class="nav-item fw-bold">
+                    <button
+                      class="nav-link active"
+                      type="button"
+                      data-bs-toggle="tab"
+                      data-bs-target="#requests1"
+                    >
+                      Requests
+                    </button>
+                  </li>
+                  <li class="nav-item fw-bold">
+                    <button
+                      class="nav-link"
+                      type="button"
+                      data-bs-toggle="tab"
+                      data-bs-target="#trips1"
+                    >
+                      Trips
+                    </button>
+                  </li>
+                  <li class="nav-item fw-bold">
+                    <button
+                      class="nav-link"
+                      type="button"
+                      data-bs-toggle="tab"
+                      data-bs-target="#reviews1"
+                    >
+                      Reviews
+                    </button>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane" id="message">
+                <div class="container p-0 min-vh-100">
+                  <div class="p-4">
+                    <input
+                      id="search"
+                      type="search"
+                      placeholder="Search"
+                      class="form-control bg-opacity-25 rounded-5"
+                      style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                    />
+                  </div>
+
+                  <div class="row gap-2 w-100 px-4 my-3">
+                    <a class="btn btn-dark btn-sm col-auto rounded-3"> All </a>
+                    <a class="col-auto btn btn-outline-dark btn-sm rounded-3">
+                      Unread
+                    </a>
+                    <a class="col-auto btn btn-outline-dark btn-sm rounded-3">
+                      Transactions
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <div
+                      class="rounded-3 px-3 py-2 d-flex bg-success-subtle align-items-center justify-content-start gap-3"
+                    >
+                      <svg class="bi bi-md align-middle text-success">
+                        <use
+                          href="instagram-icons/sprite.svg#bi-shield-check"
+                        />
+                      </svg>
+                      <div class="d-flex flex-column">
+                        <p class="text-success fw-bold m-0">
+                          Keep chats and payment in Pasabuy.
+                          <span class="text-success fw-normal m-0"
+                            >We can protect deals and transaction made
+                            here.</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex flex-column gap-3 h-100 position-relative bg-warning px-2 bg-opacity-10 py-2 w-100"
+                    style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+                  >
+                    <div class="d-flex flex-row gap-2">
+                      <div
+                        class="bg-success bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                        style="width: 45px; height: 45px; object-fit: cover"
+                      >
+                        <svg class="bi bi-md align-middle text-success">
+                          <use
+                            href="instagram-icons/sprite.svg#bi-shield-check"
+                          />
+                        </svg>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center w-100 position-relative"
+                      >
+                        <div class="d-flex flex-column">
+                          <p class="text-black fw-bold m-0">
+                            Verification approved
+                          </p>
+                          <p class="m-0 text-secondary">
+                            You now have the verified badge and can approve
+                            transaction forms.
+                          </p>
+                        </div>
+                        <div>
+                          <small
+                            class="text-secondary position-absolute top-100 end-0"
+                            >9:21 AM</small
+                          >
+                          <p
+                            class="bg-warning rounded-5 position-absolute top-0 end-0"
+                            style="width: 10px; height: 10px"
+                          ></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div
+                    class="d-flex flex-column gap-3 mt-3 bg-white p-2 w-100"
+                    style="border-bottom: 2px solid rgba(128, 128, 128, 0.13)"
+                  >
+                    <a href="conversation.html" type="button" class="nav-link">
+                      <div class="d-flex flex-row gap-2">
+                        <div
+                          class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                          style="width: 45px; height: 45px; object-fit: cover"
+                        >
+                          <h3 class="text-light fw-bold m-0">B</h3>
+                        </div>
+
+                        <div
+                          class="d-flex justify-content-between align-items-center w-100"
+                        >
+                          <div class="d-flex flex-column">
+                            <p class="text-black fw-bold m-0">
+                              bryan.m
+                              <span
+                                class="badge rounded-pill bg-warning bg-opacity-25 text-warning"
+                                >Trip: Milagros to Mandaon</span
+                              >
+                            </p>
+                            <p class="m-0 text-secondary">Sent a message.</p>
+                          </div>
+                          <small class="text-secondary">9:21 AM</small>
+                        </div>
+                      </div>
+                    </a>
+                    <div></div>
+                  </div>
+                  <a href="conversation.html" class="nav-link">
+                    <div
+                      class="d-flex flex-column gap-3 bg-white p-2 w-100"
+                      style="border-bottom: 2px solid rgba(128, 128, 128, 0.13)"
+                    >
+                      <div class="d-flex flex-row gap-2">
+                        <div
+                          class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                          style="width: 45px; height: 45px; object-fit: cover"
+                        >
+                          <h3 class="text-light fw-bold m-0">N</h3>
+                        </div>
+
+                        <div
+                          class="d-flex justify-content-between align-items-center w-100"
+                        >
+                          <div class="d-flex flex-column">
+                            <p class="text-black fw-bold m-0">
+                              nathin.else
+                              <span
+                                class="badge rounded-pill bg-success bg-opacity-25 text-success"
+                                >Offer to buy</span
+                              >
+                            </p>
+                            <p class="m-0 text-secondary">Budget ₱1,250</p>
+                          </div>
+                          <small class="text-secondary">12:51 AM</small>
+                        </div>
+                      </div>
+                      <div></div>
+                    </div>
+                  </a>
+                  <a href="conversation.html" class="nav-link">
+                    <div
+                      class="d-flex flex-column gap-3 bg-white p-2 w-100"
+                      style="border-bottom: 2px solid rgba(128, 128, 128, 0.13)"
+                    >
+                      <div class="d-flex flex-row gap-2">
+                        <div
+                          class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                          style="width: 45px; height: 45px; object-fit: cover"
+                        >
+                          <h3 class="text-light fw-bold m-0">J</h3>
+                        </div>
+
+                        <div
+                          class="d-flex justify-content-between align-items-center w-100"
+                        >
+                          <div class="d-flex flex-column">
+                            <p class="text-black fw-bold m-0">
+                              munoy.p
+                              <span
+                                class="badge rounded-pill bg-secondary bg-opacity-25 text-secondary"
+                                >Purchased</span
+                              >
+                            </p>
+                            <p class="m-0 text-secondary">
+                              Shared a meet-up point.
+                            </p>
+                          </div>
+                          <small class="text-secondary">10:18 AM</small>
+                        </div>
+                      </div>
+                      <div></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <div
+          class="col-lg-4 position-sticky vh-100 overflow-auto d-none d-lg-block"
+          id="right-panel"
+        >
+          <div class="tab-content">
+            <div class="tab-pane show fade">
+              <div class="container h-100">
+                <div
+                  class="card bg-white p-2 mt-3"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div class="d-flex justify-content-between rounded-3">
+                    <h5 class="text-black">Active transaction</h5>
+                    <p
+                      class="badge rounded-pill text-warning bg-warning bg-opacity-25 align-middle"
+                    >
+                      Payment held
+                    </p>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <h5 class="text-black">Seiko Watch from Mandaon</h5>
+                    <p class="text-dark-emphasis">
+                      with Dan A. Mandaon to Dimasalang
+                    </p>
+                    <div class="row g-1 text-center">
+                      <div class="col-3">
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-success"
+                            style="width: 100%"
+                          ></div>
+                        </div>
+                        <small class="text-dark-emphasis">Approved</small>
+                      </div>
+                      <div class="col-3 text-center">
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-success"
+                            style="width: 100%"
+                          ></div>
+                        </div>
+                        <small class="text-dark-emphasis">Paid</small>
+                      </div>
+                      <div class="col-3 text-center">
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 100%"
+                          ></div>
+                        </div>
+                        <small class="text-warning">Purchased</small>
+                      </div>
+                      <div class="col-3 text-center">
+                        <div class="progress" style="height: 5px">
+                          <div
+                            class="progress-bar bg-dark"
+                            style="width: 100%"
+                          ></div>
+                        </div>
+                        <small class="text-dark-emphasis">Delivered</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card bg-white p-2 mt-3"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <h5 class="text-black">Travelers Going today</h5>
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-row gap-3">
+                      <div
+                        class="bg-primary rounded-circle d-flex align-items-center justify-content-center"
+                        style="width: 45px; height: 45px"
+                      >
+                        <h3 class="text-light fw-bold m-0">N</h3>
+                      </div>
+                      <div class="name d-flex gap-0 flex-column">
+                        <div class="text-black fw-bold">nathalie.g</div>
+                        <div class="text-dark-emphasis">
+                          Dimasalang to Cataingan
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row gap-3">
+                      <div
+                        class="bg-primary rounded-circle d-flex align-items-center justify-content-center"
+                        style="width: 45px; height: 45px"
+                      >
+                        <h3 class="text-white fw-bold m-0">N</h3>
+                      </div>
+                      <div class="name d-flex gap-0 flex-column">
+                        <div class="text-black fw-bold">nathing.else</div>
+                        <div class="text-dark-emphasis">
+                          Dimasalang to Masabate City
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row gap-3">
+                      <div
+                        class="bg-primary rounded-circle d-flex align-items-center justify-content-center"
+                        style="width: 45px; height: 45px"
+                      >
+                        <h3 class="text-white fw-bold m-0">P</h3>
+                      </div>
+                      <div class="name d-flex gap-0 flex-column">
+                        <div class="text-black fw-bold">prince.c</div>
+                        <div class="text-dark-emphasis">Masbate to Mandaon</div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row gap-3">
+                      <div
+                        class="bg-primary rounded-circle d-flex align-items-center justify-content-center"
+                        style="width: 45px; height: 45px"
+                      >
+                        <h3 class="text-white fw-bold m-0">G</h3>
+                      </div>
+                      <div class="name d-flex gap-0 flex-column">
+                        <div class="text-black fw-bold">gerald.d</div>
+                        <div class="text-dark-emphasis">Dimasalang to Mobo</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="card bg-white p-2 mt-3"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <h5 class="text-black">Offers to buy</h5>
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-row gap-3">
+                      <div
+                        class="bg-primary rounded-circle d-flex align-items-center justify-content-center"
+                        style="width: 45px; height: 45px"
+                      >
+                        <h3 class="text-white fw-bold m-0">L</h3>
+                      </div>
+                      <div class="name d-flex gap-0 flex-column">
+                        <div class="text-black fw-bold">lorenz.d</div>
+                        <div class="text-dark-emphasis">
+                          300x17 Leo Tire in Masbate City
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row gap-3">
+                      <div
+                        class="bg-primary rounded-circle d-flex align-items-center justify-content-center"
+                        style="width: 45px; height: 45px"
+                      >
+                        <h3 class="text-white fw-bold m-0">B</h3>
+                      </div>
+                      <div class="name d-flex gap-0 flex-column">
+                        <div class="text-black fw-bold">bryan.m</div>
+                        <div class="text-dark-emphasis">
+                          Burger&Fries in Jolibee
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search"
+                  class="form-control rounded-5 my-4"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                />
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane" id="conversation">
+                <div class="container p-0 min-vh-100">
+                  <div class="p-2">
+                    <div class="d-flex flex-row gap-2 align-items-center my-2">
+                      <div
+                        class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                        style="width: 45px; height: 45px; object-fit: cover"
+                      >
+                        <h3 class="text-light fw-bold m-0">B</h3>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center bg-secondary bg-opacity-10 p-2 rounded-3"
+                      >
+                        <p>Makadto ako buwas sa City.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-row gap-2 align-items-center my-2 justify-content-end"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center bg-warning text-black bg-opacity-25 p-2 rounded-3"
+                        style="max-width: 75%"
+                      >
+                        <p>
+                          Pwede ako makapasabay chocolate cake sa Goldilocks.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row gap-2 align-items-center my-2">
+                      <div
+                        class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                        style="width: 45px; height: 45px; object-fit: cover"
+                      >
+                        <h3 class="text-light fw-bold m-0">B</h3>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center bg-secondary bg-opacity-10 p-2 rounded-3"
+                      >
+                        <p>segesege 900 tanan sabay na an pasabuy.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-row gap-2 align-items-center my-2 justify-content-end"
+                    >
+                      <div
+                        class="d-flex justify-content-between align-items-center bg-warning text-black bg-opacity-25 p-2 rounded-3"
+                        style="max-width: 75%"
+                      >
+                        <p>sa Dimasalang ko la pickupan ga salamat.</p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row gap-2 align-items-center my-2">
+                      <div
+                        class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                        style="width: 45px; height: 45px; object-fit: cover"
+                      >
+                        <h3 class="text-light fw-bold m-0">B</h3>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center bg-secondary bg-opacity-10 p-2 rounded-3"
+                      >
+                        <p>deal pa approved nala sa form.</p>
+                      </div>
+                    </div>
+
+                    <div class="card w-100">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                          <h6 class="fw-bold">Transaction form</h6>
+                          <span
+                            class="badge rounded-pill bg-warning bg-opacity-25 text-warning align-middle"
+                            >Awaiting approval</span
+                          >
+                        </div>
+                        <div class="d-flex flex-column">
+                          <div class="gap-5 d-flex">
+                            <p class="text-secondary w-25">item</p>
+                            <span class="text-black"
+                              >Chocolate cake, 8 inch</span
+                            >
+                          </div>
+                          <div class="gap-5 d-flex">
+                            <p class="text-secondary w-25">Pickup</p>
+                            <span class="text-black"
+                              >Goldilocks, Masbate City</span
+                            >
+                          </div>
+                          <div class="gap-5 d-flex">
+                            <p class="text-secondary w-25">Deliver</p>
+                            <span class="text-black"
+                              >Dimasalang, Sunday PM</span
+                            >
+                          </div>
+                          <div class="gap-5 d-flex">
+                            <p class="text-secondary w-25">Price</p>
+                            <span class="text-black fw-bold">₱900</span>
+                          </div>
+                        </div>
+                        <div class="row g-2">
+                          <div class="col-6">
+                            <button class="btn btn-warning w-100 fw-bold">
+                              Review form
+                            </button>
+                          </div>
+                          <div class="col-6">
+                            <button class="btn btn-danger w-100 fw-bold">
+                              Decline
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center my-2"
+                    >
+                      <small class="text-secondary text-center"
+                        >Payments starts after both of you approve.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-bottom d-lg-none h-50 p-1 bg-white d-flex flex-column rounded-top-4"
+        tabindex="-1"
+        id="SearchCanvas"
+        style="backdrop-filter: blur(3px)"
+      >
+        <div class="offcanvas-header d-flex justify-content-between">
+          <h1 class="fw-bold navbar-brand text-black">
+            Search <span class="text-warning">.</span>
+          </h1>
+          <button
+            class="btn btn-close"
+            type="button"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <input
+            id="search"
+            type="search"
+            placeholder="Search"
+            class="form-control rounded-5 mb-3"
+            style="border: 2px solid rgba(128, 128, 128, 0.13)"
+          />
+
+          <div class="d-flex justify-content-between mb-2 align-items-center">
+            <h6>Recent searches</h6>
+            <button class="btn text-warning btn-sm rounded-4">Clear all</button>
+          </div>
+          <div class="row g-2 mb-3">
+            <div class="col-12 d-flex justify-content-between">
+              <div class="d-flex gap-2">
+                <svg class="bi bi-md align-middle text-secondary">
+                  <use href="instagram-icons/sprite.svg#bi-clock" />
+                </svg>
+                Goldilocks cake Masbate City
+              </div>
+              <button class="btn btn-close"></button>
+            </div>
+            <div class="col-12 d-flex justify-content-between">
+              <div class="d-flex gap-2">
+                <svg class="bi bi-md align-middle text-secondary">
+                  <use href="instagram-icons/sprite.svg#bi-clock" />
+                </svg>
+                Traveler to Cataingan
+              </div>
+              <button class="btn btn-close"></button>
+            </div>
+            <div class="col-12 d-flex justify-content-between">
+              <div class="d-flex gap-2">
+                <svg class="bi bi-md align-middle text-secondary">
+                  <use href="instagram-icons/sprite.svg#bi-clock" />
+                </svg>
+                Pandesal Dimasalang
+              </div>
+              <button class="btn btn-close"></button>
+            </div>
+          </div>
+          <h6>Popular destinatinons</h6>
+          <div class="row g-1">
+            <div class="col-auto">
+              <a href="" class="btn btn-dark btn-sm rounded-5">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                </svg>
+                Masbate City
+              </a>
+            </div>
+            <div class="col-auto">
+              <a href="" class="btn btn-dark btn-sm rounded-5">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                </svg>
+                Dimasalang
+              </a>
+            </div>
+            <div class="col-auto">
+              <a href="" class="btn btn-dark btn-sm rounded-5">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                </svg>
+                Mandaon
+              </a>
+            </div>
+            <div class="col-auto">
+              <a href="" class="btn btn-dark btn-sm rounded-5">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                </svg>
+                Cataingan
+              </a>
+            </div>
+            <div class="col-auto">
+              <a href="" class="btn btn-dark btn-sm rounded-5">
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                </svg>
+                Balud
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="p-3 offcanvas offcanvas-bottom d-lg-none bg-white rounded-top-4"
+        id="CartCanvas"
+        style="backdrop-filter: blur(6px)"
+      >
+        <div class="d-flex flex-column j">
+          <div class="d-flex justify-content-between">
+            <h5 class="text-black">
+              Active transaction
+              <span
+                class="badge rounded-pill text-warning bg-warning bg-opacity-25 align-middle"
+                >Payment held</span
+              >
+            </h5>
+
+            <button
+              class="btn btn-close"
+              type="button"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <h5 class="text-black">Seiko Watch from Mandaon</h5>
+          <p class="text-dark-emphasis">with Dan A. Mandaon to Dimasalang</p>
+        </div>
+        <div class="offcanvas-body" tabindex="-1" id="CartCanvas">
+          <div class="row g-1 text-center">
+            <div class="col-3">
+              <div class="progress" style="height: 5px">
+                <div class="progress-bar bg-success" style="width: 100%"></div>
+              </div>
+              <small class="text-dark-emphasis">Approved</small>
+            </div>
+            <div class="col-3 text-center">
+              <div class="progress" style="height: 5px">
+                <div class="progress-bar bg-success" style="width: 100%"></div>
+              </div>
+              <small class="text-dark-emphasis">Paid</small>
+            </div>
+            <div class="col-3 text-center">
+              <div class="progress" style="height: 5px">
+                <div class="progress-bar bg-warning" style="width: 100%"></div>
+              </div>
+              <small class="text-warning">Purchased</small>
+            </div>
+            <div class="col-3 text-center">
+              <div class="progress" style="height: 5px">
+                <div class="progress-bar bg-dark" style="width: 100%"></div>
+              </div>
+              <small class="text-dark-emphasis">Delivered</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="userIDjake" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div
+            class="modal-content bg-white rounded-4"
+            style="
+              backdrop-filter: blur(6px);
+              border: 2px solid rgba(128, 128, 128, 0.13);
+            "
+          >
+            <div class="modal-header border-0 py-0 pt-3 mb-0">
+              <button
+                class="btn btn-close"
+                type="button"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body py-0 pb-3">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center px-2"
+              >
+                <div
+                  class="d-flex rounded-circle bg-primary align-items-center justify-content-center flex-shrink-0"
+                  style="width: 80px; height: 80px"
+                >
+                  <p class="fs-1 text-white fw-bold text-center m-0">J</p>
+                </div>
+                <h5 class="fw-bold m-0 mt-2">jake.b</h5>
+                <div class="text-primary mb-2">
+                  <svg class="bi bi-sm align-middle">
+                    <use href="instagram-icons/sprite.svg#bi-patch-check" />
+                  </svg>
+                  <small>Verified Traveler &amp; Requester</small>
+                </div>
+                <div
+                  class="row flex-grow-1 mb-2 align-items-center text-center w-100"
+                >
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="m-0 fw-bold">12</h5>
+                      <small class="m-0 text-secondary">Deliveries</small>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="m-0 fw-bold">10</h5>
+                      <small class="m-0 text-secondary">Requests</small>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="m-0 fw-bold">4.8</h5>
+                      <small class="m-0 text-secondary">Ratings</small>
+                    </div>
+                  </div>
+                </div>
+                <p class="m-0">esi kausap</p>
+                <div class="text-muted">
+                  <svg class="bi bi-sm align-middle">
+                    <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                  </svg>
+                  <small>Dimasalang. Member since Oct 2026</small>
+                </div>
+              </div>
+              <div
+                class="row mt-3 g-1 align-items-center justify-content-center"
+              >
+                <div class="col-7">
+                  <a
+                    href="message.html"
+                    class="btn fw-bold w-100 custom-button btn-warning"
+                    type="button"
+                  >
+                    Send a message
+                  </a>
+                </div>
+                <div class="col-2">
+                  <button
+                    class="btn fw-bold rounded-5 d-flex align-items-center justify-content-center"
+                    style="width: 40px; height: 40px"
+                  >
+                    <svg class="bi bi-md align-middle text-warning">
+                      <use href="instagram-icons/sprite.svg#bi-share" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <ul
+                  class="nav nav-tabs w-100"
+                  style="
+                    --bs-nav-tabs-link-active-bg: none;
+                    --bs-nav-tabs-link-active-color: orange;
+                    --bs-nav-tabs-link-color: black;
+                  "
+                >
+                  <div
+                    class="d-flex justify-content-around align-items-center w-100"
+                  >
+                    <li class="nav-item fw-bold">
+                      <button
+                        class="nav-link active"
+                        type="button"
+                        data-bs-toggle="tab"
+                        data-bs-target="#requests"
+                      >
+                        Requests
+                      </button>
+                    </li>
+                    <li class="nav-item fw-bold">
+                      <button
+                        class="nav-link"
+                        type="button"
+                        data-bs-toggle="tab"
+                        data-bs-target="#trips"
+                      >
+                        Trips
+                      </button>
+                    </li>
+                    <li class="nav-item fw-bold">
+                      <button
+                        class="nav-link"
+                        type="button"
+                        data-bs-toggle="tab"
+                        data-bs-target="#reviews"
+                      >
+                        Reviews
+                      </button>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+
+              <div class="tab-content">
+                <div
+                  class="tab-pane show fade active card bg-white bg-opacity-25 p-3 m-3 rounded-4"
+                  id="requests"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="fw-bold text-black">Birthday cake,8-inch</h5>
+                    <span
+                      class="badge rounded-pill bg-success bg-opacity-25 text-success"
+                      >Open</span
+                    >
+                  </div>
+                  <div class="text-dark-emphasis">
+                    Masbate City to Dimasalang. Budget ₱900
+                  </div>
+                  <div class="text-dark-emphasis">2 offers so far</div>
+                </div>
+                <div
+                  class="tab-pane card fade bg-white bg-opacity-25 p-3 m-3 rounded-4"
+                  id="trips"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="fw-bold text-black">Dimasalang to Mandaon</h5>
+                    <span
+                      class="badge rounded-pill bg-success bg-opacity-25 text-success"
+                      >Open</span
+                    >
+                  </div>
+                  <div class="text-dark-emphasis">
+                    Monday, Oct 19.Motorcycle
+                  </div>
+                  <div class="text-dark-emphasis">8AM-10AM</div>
+                </div>
+                <div
+                  class="tab-pane card fade bg-white bg-opacity-25 p-3 m-3 rounded-4"
+                  id="reviews"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-row gap-3">
+                      <div
+                        class="bg-primary rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center"
+                        style="width: 45px; height: 45px; object-fit: cover"
+                      >
+                        <h3 class="text-light m-0">P</h3>
+                      </div>
+                      <div class="name d-flex gap-0 flex-column">
+                        <div class="text-black fw-bold">
+                          pochulo.m
+                          <div
+                            class="badge rounded-pill bg-warning bg-opacity-25 text-warning"
+                          >
+                            5.0 Ratings
+                          </div>
+                        </div>
+                        <div class="text-dark-emphasis">
+                          Palanas. Member since Oct 2026
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-black mt-2">
+                    <span class="text-success">Feedback:</span> Madali ka
+                    istoryahan.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="userIDjerume" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div
+            class="modal-content bg-white rounded-4"
+            style="
+              backdrop-filter: blur(6px);
+              border: 2px solid rgba(128, 128, 128, 0.13);
+            "
+          >
+            <div class="modal-header border-0 py-0 pt-3 mb-0">
+              <button
+                class="btn btn-close"
+                type="button"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body py-0 pb-3">
+              <div
+                class="d-flex flex-column justify-content-center align-items-center px-2"
+              >
+                <div
+                  class="d-flex rounded-circle bg-primary align-items-center justify-content-center flex-shrink-0"
+                  style="width: 80px; height: 80px"
+                >
+                  <p class="fs-1 text-white fw-bold text-center m-0">J</p>
+                </div>
+                <h5 class="fw-bold m-0 mt-2">jerume.a</h5>
+                <div class="text-primary mb-2">
+                  <svg class="bi bi-sm align-middle">
+                    <use href="instagram-icons/sprite.svg#bi-patch-check" />
+                  </svg>
+                  <small>Verified Traveler &amp; Requester</small>
+                </div>
+                <div
+                  class="row flex-grow-1 mb-2 align-items-center text-center w-100"
+                >
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="m-0 fw-bold">12</h5>
+                      <small class="m-0 text-secondary">Deliveries</small>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="m-0 fw-bold">10</h5>
+                      <small class="m-0 text-secondary">Requests</small>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5 class="m-0 fw-bold">4.8</h5>
+                      <small class="m-0 text-secondary">Ratings</small>
+                    </div>
+                  </div>
+                </div>
+                <p class="m-0">esi kausap</p>
+                <div class="text-muted">
+                  <svg class="bi bi-sm align-middle">
+                    <use href="instagram-icons/sprite.svg#bi-geo-alt" />
+                  </svg>
+                  <small>Dimasalang. Member since Oct 2026</small>
+                </div>
+              </div>
+              <div
+                class="row mt-3 g-1 align-items-center justify-content-center"
+              >
+                <div class="col-7">
+                  <a
+                    href="message.html"
+                    class="btn fw-bold w-100 custom-button btn-warning"
+                    type="button"
+                  >
+                    Send a message
+                  </a>
+                </div>
+                <div class="col-2">
+                  <a
+                    href=""
+                    class="btn fw-bold rounded-5 d-flex align-items-center justify-content-center"
+                    style="width: 40px; height: 40px"
+                    type="button"
+                  >
+                    <svg class="bi bi-md align-middle text-warning">
+                      <use href="instagram-icons/sprite.svg#bi-share" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <ul
+                  class="nav nav-tabs w-100"
+                  style="
+                    --bs-nav-tabs-link-active-bg: none;
+                    --bs-nav-tabs-link-active-color: orange;
+                    --bs-nav-tabs-link-color: black;
+                  "
+                >
+                  <div
+                    class="d-flex justify-content-around align-items-center w-100"
+                  >
+                    <li class="nav-item fw-bold">
+                      <button
+                        class="nav-link active"
+                        type="button"
+                        data-bs-toggle="tab"
+                        data-bs-target="#requests1"
+                      >
+                        Requests
+                      </button>
+                    </li>
+                    <li class="nav-item fw-bold">
+                      <button
+                        class="nav-link"
+                        type="button"
+                        data-bs-toggle="tab"
+                        data-bs-target="#trips1"
+                      >
+                        Trips
+                      </button>
+                    </li>
+                    <li class="nav-item fw-bold">
+                      <button
+                        class="nav-link"
+                        type="button"
+                        data-bs-toggle="tab"
+                        data-bs-target="#reviews1"
+                      >
+                        Reviews
+                      </button>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+
+              <div class="tab-content">
+                <div
+                  class="tab-pane show fade active card bg-white bg-opacity-25 p-3 m-3 rounded-4"
+                  id="requests1"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="fw-bold text-black">Birthday cake,8-inch</h5>
+                    <span
+                      class="badge rounded-pill bg-success bg-opacity-25 text-success"
+                      >Open</span
+                    >
+                  </div>
+                  <div class="text-dark-emphasis">
+                    Masbate City to Dimasalang. Budget ₱900
+                  </div>
+                  <div class="text-dark-emphasis">2 offers so far</div>
+                </div>
+                <div
+                  class="tab-pane card fade bg-white bg-opacity-25 p-3 m-3 rounded-4"
+                  id="trips1"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="fw-bold text-black">Dimasalang to Mandaon</h5>
+                    <span
+                      class="badge rounded-pill bg-success bg-opacity-25 text-success"
+                      >Open</span
+                    >
+                  </div>
+                  <div class="text-dark-emphasis">
+                    Monday, Oct 19.Motorcycle
+                  </div>
+                  <div class="text-dark-emphasis">8AM-10AM</div>
+                </div>
+                <div
+                  class="tab-pane card fade bg-white bg-opacity-25 p-3 m-3 rounded-4"
+                  id="reviews1"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-row gap-3">
+                      <div
+                        class="bg-primary rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center"
+                        style="width: 45px; height: 45px; object-fit: cover"
+                      >
+                        <h3 class="text-light m-0">G</h3>
+                      </div>
+                      <div class="name d-flex gap-0 flex-column">
+                        <div class="text-black fw-bold">
+                          garry.v
+                          <div
+                            class="badge rounded-pill bg-warning bg-opacity-25 text-warning"
+                          >
+                            5.0 Ratings
+                          </div>
+                        </div>
+                        <div class="text-dark-emphasis">
+                          Palanas. Member since Oct 2026
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-black mt-2">
+                    <span class="text-success">Feedback:</span> Matulin ka
+                    transaction.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="profile" tabindex="-1">
+        <div class="modal-dialog">
+          <div
+            class="modal-content bg-white"
+            style="
+              backdrop-filter: blur(6px);
+              border: 2px solid rgba(128, 128, 128, 0.13);
+            "
+          >
+            <div class="modal-header border-0 py-0 pt-3 mb-0">
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex flex-row gap-3">
+                  <div
+                    class="bg-primary rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center"
+                    style="width: 50px; height: 50px; object-fit: cover"
+                  >
+                    <h3 class="text-light m-0">B</h3>
+                  </div>
+                  <div class="name d-flex gap-0 flex-column">
+                    <div class="text-black fw-bold">
+                      bugoyna.jccoy
+                      <span
+                        class="badge rounded-pill bg-success text-success bg-opacity-25"
+                        >Verified</span
+                      >
+                    </div>
+                    <div class="text-dark-emphasis">
+                      Dimasalang. Member since Oct 2026
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="btn btn-close"
+                type="button"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body py-0 pb-3">
+              <div class="text-dark-emphasis my-2">
+                <p class="text-black">
+                  Weeky sa city every Saturday. Gcash or Cash
+                </p>
+              </div>
+              <button class="btn btn-primary w-100 mb-3">Edit profile</button>
+
+              <div
+                class="card bg-white p-2 rounded-4 my-2"
+                style="border: 2px solid rgba(128, 128, 128, 0.13)"
+              >
+                <div class="row">
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <p class="m-0 fw-bold text-warning">4.8</p>
+                      <p class="m-0 text-black">Ratings</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <p class="m-0 fw-bold text-warning">12</p>
+                      <p class="m-0 text-black">Deliveries</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <p class="m-0 fw-bold text-warning">10</p>
+                      <p class="m-0 text-black">Requests</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card bg-white p-2 mb-2 rounded-4"
+                style="border: 2px solid rgba(128, 128, 128, 0.13)"
+              >
+                <div class="d-flex justify-content-between rounded-3">
+                  <h5 class="text-black">Active transaction</h5>
+                  <p
+                    class="badge rounded-pill text-warning bg-warning bg-opacity-25 align-middle"
+                  >
+                    Payment held
+                  </p>
+                </div>
+                <div class="d-flex flex-column">
+                  <h5 class="text-black">Seiko Watch from Mandaon</h5>
+                  <p class="text-dark-emphasis">
+                    with Dan A. Mandaon to Dimasalang
+                  </p>
+                  <div class="row g-1 text-center">
+                    <div class="col-3">
+                      <div class="progress" style="height: 5px">
+                        <div
+                          class="progress-bar bg-success"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                      <small class="text-dark-emphasis">Approved</small>
+                    </div>
+                    <div class="col-3 text-center">
+                      <div class="progress" style="height: 5px">
+                        <div
+                          class="progress-bar bg-success"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                      <small class="text-dark-emphasis">Paid</small>
+                    </div>
+                    <div class="col-3 text-center">
+                      <div class="progress" style="height: 5px">
+                        <div
+                          class="progress-bar bg-warning"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                      <small class="text-warning">Purchased</small>
+                    </div>
+                    <div class="col-3 text-center">
+                      <div class="progress" style="height: 5px">
+                        <div
+                          class="progress-bar bg-dark"
+                          style="width: 100%"
+                        ></div>
+                      </div>
+                      <small class="text-dark-emphasis">Delivered</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-12 d-flex justify-content-center align-items-center"
+              >
+                <ul
+                  class="nav nav-tabs w-100 px-5"
+                  style="
+                    --bs-nav-tabs-link-active-bg: none;
+                    --bs-nav-tabs-link-active-color: orange;
+                    --bs-nav-tabs-link-color: white;
+                  "
+                >
+                  <div class="d-flex justify-content-between w-100">
+                    <li class="nav-item fw-bold">
+                      <button
+                        class="nav-link active"
+                        type="button"
+                        data-bs-toggle="tab"
+                        data-bs-target="#requests2"
+                      >
+                        Requests
+                      </button>
+                    </li>
+                    <li class="nav-item fw-bold">
+                      <button
+                        class="nav-link"
+                        type="button"
+                        data-bs-toggle="tab"
+                        data-bs-target="#trips2"
+                      >
+                        Trips
+                      </button>
+                    </li>
+                    <li class="nav-item fw-bold">
+                      <button
+                        class="nav-link"
+                        type="button"
+                        data-bs-toggle="tab"
+                        data-bs-target="#reviews2"
+                      >
+                        Reviews
+                      </button>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+
+              <div class="tab-content">
+                <div
+                  class="tab-pane show fade active card bg-white bg-opacity-25 p-3 m-3 rounded-4"
+                  id="requests2"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="fw-bold text-black">Birthday cake,8-inch</h5>
+                    <span
+                      class="badge rounded-pill bg-success bg-opacity-25 text-success"
+                      >Open</span
+                    >
+                  </div>
+                  <div class="text-dark-emphasis">
+                    Masbate City to Dimasalang. Budget ₱900
+                  </div>
+                  <div class="text-dark-emphasis">2 offers so far</div>
+                </div>
+                <div
+                  class="tab-pane card fade bg-white bg-opacity-25 p-3 m-3 rounded-4"
+                  id="trips2"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="fw-bold text-black">Dimasalang to Mandaon</h5>
+                    <span
+                      class="badge rounded-pill bg-success bg-opacity-25 text-success"
+                      >Open</span
+                    >
+                  </div>
+                  <div class="text-dark-emphasis">
+                    Monday, Oct 19.Motorcycle
+                  </div>
+                  <div class="text-dark-emphasis">8AM-10AM</div>
+                </div>
+                <div
+                  class="tab-pane card fade bg-white bg-opacity-25 p-3 m-3 rounded-4"
+                  id="reviews2"
+                  style="border: 2px solid rgba(128, 128, 128, 0.13)"
+                >
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-row gap-3">
+                      <div
+                        class="bg-primary rounded-circle d-flex flex-shrink-0 align-items-center justify-content-center"
+                        style="width: 45px; height: 45px; object-fit: cover"
+                      >
+                        <h3 class="text-light m-0">J</h3>
+                      </div>
+                      <div class="name d-flex gap-0 flex-column">
+                        <div class="text-black fw-bold">
+                          jake.b
+                          <div
+                            class="badge rounded-pill bg-warning bg-opacity-25 text-warning"
+                          >
+                            5.0 Ratings
+                          </div>
+                        </div>
+                        <div class="text-dark-emphasis">
+                          Dimasalang. Member since Oct 2026
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-black mt-2">
+                    <span class="text-success">Feedback:</span> Madali ka
+                    transaction tapos dle barat.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-bottom h-75 rounded-top-4 w-auto"
+        id="comment"
+        tabindex="-1"
+      >
+        <div class="offcanvas-header d-flex justify-content-between">
+          <h1 class="fw-bold navbar-brand text-black">
+            Comments <span class="text-warning">.</span>
+          </h1>
+          <button
+            class="btn btn-close"
+            type="button"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div
+            class="d-flex flex-column gap-3 p-2 w-100"
+            style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+          >
+            <div class="d-flex flex-row gap-2">
+              <div
+                class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                style="width: 45px; height: 45px; object-fit: cover"
+              >
+                <h3 class="text-light fw-bold m-0">J</h3>
+              </div>
+
+              <div
+                class="d-flex justify-content-between align-items-center w-100 position-relative"
+              >
+                <div class="d-flex flex-column">
+                  <p class="text-black fw-bold m-0">
+                    jake.b
+                    <span
+                      class="rounded-pill badge bg-primary bg-opacity-25 text-primary"
+                      >Verified</span
+                    >
+                  </p>
+                  <p class="m-0 text-secondary">
+                    "Madali ka transaction. Thank you!"
+                  </p>
+                  <p class="text-secondary fw-bold">Reply</p>
+                  <p class="text-secondary fw-bold mx-5">View more 4 replies</p>
+                </div>
+                <div>
+                  <small class="text-secondary position-absolute top-50 end-0">
+                    <svg class="bi bi-md align-middle">
+                      <use href="instagram-icons/sprite.svg#bi-heart" />
+                    </svg>
+                  </small>
+                </div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+
+          <div
+            class="d-flex flex-column gap-3 p-2 w-100"
+            style="border-bottom: 1px solid rgba(128, 128, 128, 0.13)"
+          >
+            <div class="d-flex flex-row gap-2">
+              <div
+                class="bg-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                style="width: 45px; height: 45px; object-fit: cover"
+              >
+                <h3 class="text-light fw-bold m-0">D</h3>
+              </div>
+
+              <div
+                class="d-flex justify-content-between align-items-center w-100 position-relative"
+              >
+                <div class="d-flex flex-column">
+                  <p class="text-black fw-bold m-0">
+                    dan.a
+                    <span
+                      class="rounded-pill badge bg-primary bg-opacity-25 text-primary"
+                      >Verified</span
+                    >
+                  </p>
+                  <p class="m-0 text-secondary">"Kabaho likod. Thank you!"</p>
+                  <p class="text-secondary fw-bold">Reply</p>
+                  <p class="text-secondary fw-bold mx-5">
+                    View more 10 replies
+                  </p>
+                </div>
+                <div>
+                  <small class="text-secondary position-absolute top-50 end-0">
+                    <svg class="bi bi-md align-middle">
+                      <use href="instagram-icons/sprite.svg#bi-heart" />
+                    </svg>
+                  </small>
+                </div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <nav
+          class="navbar navbar-expand-lg bg-white sticky-bottom d-lg-none py-2"
+          style="border-top: 2px solid rgba(128, 128, 128, 0.13)"
+        >
+          <div class="container">
+            <ul class="navbar-nav w-100">
+              <div class="d-flex justify-content-around align-items-center">
+                <li
+                  class="nav-item bg-warning bg-opacity-25 rounded-circle"
+                  style="width: 40px; height: 40px"
+                >
+                  <a
+                    href="index.html"
+                    class="nav-link text-warning d-flex flex-column justify-content-center align-items-center"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#TransactionForm"
+                  >
+                    <svg class="bi bi-md align-middle">
+                      <use href="instagram-icons/sprite.svg#bi-emoji-smile" />
+                    </svg>
+                  </a>
+                </li>
+
+                <input
+                  type="text"
+                  placeholder="What do you think of this?"
+                  class="form-control rounded-5 w-75"
+                />
+
+                <li
+                  class="nav-item bg-warning rounded-circle"
+                  style="width: 40px; height: 40px"
+                >
+                  <a
+                    href="profile.html"
+                    class="nav-link text-black d-flex flex-column justify-content-center align-items-center"
+                    type="button"
+                  >
+                    <svg class="bi bi-md align-middle">
+                      <use href="instagram-icons/sprite.svg#bi-send" />
+                    </svg>
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg bg-white sticky-bottom d-lg-none py-0"
+      style="border-top: 2px solid rgba(128, 128, 128, 0.13)"
+    >
+      <div class="container">
+        <ul class="navbar-nav w-100">
+          <div class="d-flex justify-content-around align-items-center">
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center"
+              >
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-house-door" />
+                </svg>
+                <span><small>Home</small></span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="#search"
+                class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center"
+                data-bs-target="#SearchCanvas"
+                data-bs-toggle="offcanvas"
+              >
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-search" />
+                </svg>
+                <span><small>Search</small></span>
+              </a>
+            </li>
+
+            <li
+              class="nav-item d-flex align-items-center justify-content-center bg-warning-subtle rounded-4"
+              style="width: 50px; height: 50px"
+            >
+              <a
+                href="#post"
+                class="nav-link text-warning d-flex flex-column justify-content-center align-items-center"
+              >
+                <svg class="bi bi-lg align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-plus-square" />
+                </svg>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="#cart"
+                class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#CartCanvas"
+              >
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-bag" />
+                </svg>
+                <span><small>Activity</small></span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="profile.html"
+                class="nav-link text-secondary d-flex flex-column justify-content-center align-items-center"
+                type="button"
+              >
+                <svg class="bi bi-md align-middle">
+                  <use href="instagram-icons/sprite.svg#bi-person-circle" />
+                </svg>
+                <span><small>Profile</small></span>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
