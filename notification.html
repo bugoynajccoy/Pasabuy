@@ -404,7 +404,264 @@
           </div>
         </div>
       </div>
+      <div class="offcanvas offcanvas-bottom h-50 rounded-top-4" id="post">
+        <div class="offcanvas-header">
+          <div
+            class="d-flex flex-column justify-content-start align-items-start"
+          >
+            <h4>What do you want to post?</h4>
+            <small class="text-secondary"
+              >Pick one.You can change it later.</small
+            >
+          </div>
+          <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <button
+            type="button"
+            data-bs-target="#RequestItem"
+            data-bs-toggle="offcanvas"
+            class="card w-100 mb-3"
+          >
+            <div class="d-flex p-3 py-3 gap-3">
+              <div
+                class="rounded-4 bg-primary bg-opacity-25 d-flex align-items-center justify-content-center"
+                style="width: 40px; height: 40px"
+              >
+                <svg class="bi bi-md align-middle text-primary">
+                  <use href="instagram-icons/sprite.svg#bi-bag" />
+                </svg>
+              </div>
+              <div
+                class="d-flex flex-column justify-content-start align-items-start"
+              >
+                <h6 class="m-0">Request an item</h6>
+                <small class="text-secondary m-0"
+                  >I need something bought and delivered</small
+                >
+              </div>
+            </div>
+          </button>
+          <button
+            type="button"
+            data-bs-target="#PostTrip"
+            data-bs-toggle="offcanvas"
+            class="card w-100"
+          >
+            <div class="d-flex p-3 py-3 gap-3">
+              <div
+                class="rounded-4 bg-warning bg-opacity-25 d-flex align-items-center justify-content-center"
+                style="width: 40px; height: 40px"
+              >
+                <svg class="bi bi-md align-middle text-warning">
+                  <use href="instagram-icons/sprite.svg#bi-bag" />
+                </svg>
+              </div>
+              <div
+                class="d-flex flex-column align-items-start justify-content-start"
+              >
+                <h6 class="m-0">Post a trip</h6>
+                <small class="text-secondary m-0"
+                  >I'm going somewhere and can carry things</small
+                >
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-bottom h-75 rounded-4" id="PostTrip">
+        <div class="offcanvas-header">
+          <h6>Post a trip</h6>
+          <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div
+            class="d-flex align-items-center justify-content-center flex-column"
+          >
+            <div
+              class="bg-secondary bg-opacity-10 rounded-4 d-flex justify-content-center align-items-center mb-1"
+              style="width: 100px; height: 100px"
+            >
+              <svg class="bi bi-lg align-middle text-secondary align-middle">
+                <use href="instagram-icons/sprite.svg#bi-camera" />
+              </svg>
+            </div>
+            <h6 class="text-secondary">Upload photo</h6>
+          </div>
+          <form>
+            <div class="mb-2">
+              <label for="" class="form-label">Caption</label>
+              <input type="text" class="form-control" style="height: 100px" />
+            </div>
+            <div class="mb-2">
+              <label for="" class="form-label">Location</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-2">
+              <label for="" class="form-label">Service fee(₱)</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-2 d-flex gap-2 w-100">
+              <div class="w-100">
+                <label for="" class="form-label">Space left</label>
+                <input type="text" class="form-control w-100" />
+              </div>
+              <div class="w-100">
+                <label for="" class="form-label">Return</label>
+                <input type="text" class="form-control w-100" />
+              </div>
+            </div>
+            <div
+              class="p-2 mt-5 d-flex flex-column"
+              style="border-top: 1px solid rgba(128, 128, 128, 0.568)"
+            >
+              <div class="d-flex justify-content-between mb-1">
+                <small class="text-secondary"
+                  >Trip from Dimasalang to Masbate City</small
+                >
+                <small class="text-black fw-bold">Held safely</small>
+              </div>
+              <button
+                class="btn btn-primary w-100"
+                type="button"
+                data-bs-target="#TripConfirmed"
+                data-bs-toggle="offcanvas"
+              >
+                Post a trip
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-bottom h-75 rounded-4" id="RequestItem">
+        <div class="offcanvas-header">
+          <h6>Post a trip</h6>
+          <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div
+            class="d-flex align-items-center justify-content-center flex-column"
+          >
+            <div
+              class="bg-secondary bg-opacity-10 rounded-4 d-flex justify-content-center align-items-center mb-1"
+              style="width: 100px; height: 100px"
+            >
+              <svg class="bi bi-lg align-middle text-secondary align-middle">
+                <use href="instagram-icons/sprite.svg#bi-camera" />
+              </svg>
+            </div>
+            <h6 class="text-secondary">Upload photo</h6>
+          </div>
+          <form>
+            <div class="mb-2">
+              <label for="" class="form-label">Caption</label>
+              <input type="text" class="form-control" style="height: 100px" />
+            </div>
+            <div class="mb-2">
+              <label for="" class="form-label">Where to buy it?</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-2">
+              <label for="" class="form-label">Deliver to</label>
+              <input type="text" class="form-control" />
+            </div>
 
+            <div class="mb-2 d-flex gap-2 w-100">
+              <div class="w-100">
+                <label for="" class="form-label">Budget(₱)</label>
+                <input type="text" class="form-control w-100" />
+              </div>
+              <div class="w-100">
+                <label for="" class="form-label">Needed by</label>
+                <input type="text" class="form-control w-100" />
+              </div>
+            </div>
+            <div
+              class="p-2 mt-5 d-flex flex-column"
+              style="border-top: 1px solid rgba(128, 128, 128, 0.568)"
+            >
+              <div class="d-flex justify-content-between mb-1">
+                <small class="text-secondary"
+                  >Budget ₱900 + servie fee (set by traveler)
+                </small>
+                <small class="text-black fw-bold">Held safely</small>
+              </div>
+              <button
+                class="btn btn-primary w-100"
+                type="button"
+                data-bs-target="#RequestConfirmed"
+                data-bs-toggle="offcanvas"
+              >
+                Post request
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-bottom h-50" id="RequestConfirmed">
+        <div class="offcanvas-header">
+          <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center w-100"
+          >
+            <div
+              class="rounded-circle bg-primary bg-opacity-25 d-flex justify-content-center align-items-center mb-2"
+              style="width: 40px; height: 40px"
+            >
+              <svg class="bi bi-lg align-middle text-primary align-middle">
+                <use href="instagram-icons/sprite.svg#bi-check-circle" />
+              </svg>
+            </div>
+            <h3 class="mb-1">Request posted</h3>
+            <small class="text-secondary"
+              >Travelers heading to Dimasalang will be notified.</small
+            >
+            <small class="text-secondary"
+              >You'll get a message when someone offers.</small
+            >
+            <div class="mt-5 w-100">
+              <button class="btn btn-primary mb-1 w-100">See offers</button>
+              <button class="btn btn-outline-secondary mb-1 w-100">
+                Share post
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-bottom h-50" id="TripConfirmed">
+        <div class="offcanvas-header">
+          <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center w-100"
+          >
+            <div
+              class="rounded-circle bg-primary bg-opacity-25 d-flex justify-content-center align-items-center mb-2"
+              style="width: 40px; height: 40px"
+            >
+              <svg class="bi bi-lg align-middle text-primary align-middle">
+                <use href="instagram-icons/sprite.svg#bi-check-circle" />
+              </svg>
+            </div>
+            <h3 class="mb-1">Trip posted</h3>
+            <small class="text-secondary"
+              >Requesters heading to Dimasalang will be notified.</small
+            >
+            <small class="text-secondary"
+              >You'll get a message when someone offers.</small
+            >
+            <div class="mt-5 w-100">
+              <button class="btn btn-primary mb-1 w-100">See offers</button>
+              <button class="btn btn-outline-secondary mb-1 w-100">
+                Share post
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <nav
         class="navbar navbar-expand-lg bg-white sticky-bottom d-lg-none py-0"
         style="border-top: 2px solid rgba(128, 128, 128, 0.13)"
@@ -442,14 +699,16 @@
                 class="nav-item d-flex align-items-center justify-content-center bg-warning-subtle rounded-4"
                 style="width: 50px; height: 50px"
               >
-                <a
-                  href="#post"
+                <button
+                  type="button"
+                  data-bs-target="#post"
+                  data-bs-toggle="offcanvas"
                   class="nav-link text-warning d-flex flex-column justify-content-center align-items-center"
                 >
                   <svg class="bi bi-lg align-middle">
                     <use href="instagram-icons/sprite.svg#bi-plus-square" />
                   </svg>
-                </a>
+                </button>
               </li>
 
               <li class="nav-item">
